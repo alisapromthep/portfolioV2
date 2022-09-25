@@ -1,0 +1,9 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-self:flex-end;
+    background-color: $secondaryDark;
+}

@@ -1,0 +1,44 @@
+@use '../partials/colors' as *;
+
+@mixin tablet {
+    @media (min-width:48rem) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 80rem){
+        @content;
+    }
+}
+
+@mixin mobile-padding {
+    padding: 2rem;
+}
+
+@mixin tablet-padding {
+    padding: 3rem;
+}
+
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button {
+    background-color: transparent;
+    border: 2px solid $primaryLight;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: $primaryLight;
+    margin-top: 1rem;
+    
+}
+
+

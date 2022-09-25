@@ -1,0 +1,12 @@
+@use './styles/partials/typography' as *;
+@use './styles/partials/colors' as *;
+@use './styles/partials/mixins' as *;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    }
+
+body {
+    margin: 0;
+    background-color: $primary;
+}

@@ -1,0 +1,34 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
+
+
+.form {
+    @include flex-column;
+    @include tablet {
+        width: 50%;
+
+    }
+
+
+    &__label {
+        @include flex-column;
+        margin: 0.5rem 0;
+    }
+
+    &__input {
+        color: $secondaryDark;
+        border-radius: 5px;
+        padding: 0.25rem;
+        margin-top: 0.5rem;
+        border: 2px solid $primaryLight;
+
+        &-textarea{
+            height: 5rem;
+        }
+    }
+
+    &__button{
+        @include button;
+    }
+
+}

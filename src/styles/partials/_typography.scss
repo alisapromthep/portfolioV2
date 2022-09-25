@@ -1,0 +1,18 @@
+@use './colors' as *;
+@use './mixins' as *;
+
+body {
+    color: $primaryLight;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p, a, li{
+    font-size: 0.9rem;
+    @include tablet {
+        font-size: 1rem;
+    }
+}
+

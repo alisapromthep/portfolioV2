@@ -1,0 +1,49 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
+
+.projects {
+    height: 170vh;
+    position: relative;
+    @include tablet{
+        @include flex-column;
+        @include tablet-padding;
+    }
+    
+
+    &__img{
+        position: absolute;
+        top: -2rem;
+        left: -1rem;
+
+        @include tablet{
+            left: 5rem;
+            width: 20rem;
+        }
+    }
+
+    &__headline {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+
+        @include tablet {
+            position: static;
+            align-self: flex-end;
+
+        }
+    }
+
+    &__box {
+        position: relative;
+        top: 10rem;
+        @include flex-column;
+        justify-content: center;
+        align-items: center;
+        @include tablet{
+            position: static;
+            padding-top: 5rem;
+        }
+
+
+    }
+}

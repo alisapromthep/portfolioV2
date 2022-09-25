@@ -1,0 +1,35 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
+
+.connect {
+    height: 60vh;
+    background-color: $primary;
+    @include mobile-padding;
+    @include flex-column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @include tablet{
+        flex-direction: row;
+    }
+
+    &__formbox{
+        width: 100%;
+    }
+
+    &__img{
+        display: none;
+
+        @include tablet {
+            display: static;
+        }
+        &-sent{
+            position: absolute;
+            top: 10rem;
+            left: 3rem;
+
+        }
+
+    }
+}

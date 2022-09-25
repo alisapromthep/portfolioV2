@@ -1,0 +1,44 @@
+import React from 'react';
+import './Form.scss'
+
+const Form = ({handleSubmit}) => {
+    return (
+        <form
+        className='form'
+        onSubmit={handleSubmit}
+        >
+            <label className='form__label'> Name
+                <input
+                required
+                className='form__input'
+                type='data'
+                name='name'
+                placeholder='name'
+                />
+            </label>
+            <label className='form__label'> Email
+                <input
+                required
+                className='form__input'
+                type='data'
+                name='email'
+                placeholder='durian@email.com'
+                />
+            </label>
+            <label className='form__label'> Message
+            <textarea
+                className='form__input form__input-textarea'
+                required
+                name='message'
+                multiline
+                placeholder='your message here...'
+                />
+            </label>
+            <button className='form__button'>
+                Connect
+            </button>
+        </form>
+    )
+}
+
+export default Form

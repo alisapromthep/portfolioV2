@@ -1,0 +1,66 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
+
+.aboutme {
+    background-color: $primary;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mobile-padding;
+    min-height: 100vh;
+
+    @include tablet {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    &__img{
+        width: 12.5rem;
+        object-fit: cover;
+        position: relative;
+
+        @include tablet{
+            width: 15rem;
+        }
+        
+        
+        &-container {
+            border-radius: 50%;
+            width: 12.5rem;
+            height: 12.5rem;
+            overflow: hidden;
+            position: relative;
+            background-color: $primary;
+            filter: opacity(0.85);
+            z-index: 1;
+            
+            @include tablet{
+                width: 15rem;
+                height: 15rem;
+
+            }
+        }
+        
+        // &-decor {
+        //     background-color: $primary;
+        //     border-radius: 50%;
+        //     width: 12.5rem;
+        //     height: 12.5rem;
+        //     position: absolute;
+        //     top: 2.5rem;
+        //     left: 4.5rem;
+
+        // }
+    }
+
+    &__textbox {
+        @include tablet {
+            width: 50%;
+        }
+    }
+
+    
+}
