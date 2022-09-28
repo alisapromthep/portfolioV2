@@ -7,6 +7,10 @@
     align-items: center;
     @include mobile-padding;
 
+    @include desktop {
+        @include desktop-padding;
+    }
+
     &__name{
         @include tablet {
             display: none;

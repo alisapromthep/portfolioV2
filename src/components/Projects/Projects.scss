@@ -5,12 +5,20 @@
     margin: 1rem 0;
     position: relative;
 
+    @include tablet {
+        margin: 3rem 0;
+    }
+
     &__container {
         position:relative;
         overflow: hidden;
         border-radius: 10px;
         height: 16rem;
         width: 15rem;
+
+        &--invert {
+            flex-direction: row-reverse;
+        }
 
         @include tablet {
             width: 100%;
@@ -53,10 +61,11 @@
         transition: all 0.3s ease-in-out;
 
         @include tablet {
-            width: 22rem;
+            width: 25rem;
             height: 20rem;
             background-color: transparent;
             position: static;
+            padding: 0 2rem;
 
         }
 
@@ -71,6 +80,7 @@
         @include button;
         text-decoration: none;
         text-transform: capitalize;
+        border: 1px solid;
         margin: 0.25rem;
 
 

@@ -3,12 +3,12 @@ import './Projects.scss'
 
 import React from 'react';
 
-const Projects = ({name,img,description,links,techIcon,tech}) => {
+const Projects = ({index,name,img,description,links,techIcon,tech}) => {
 
     const windowWidth = window.innerWidth;
     return (
         <article className='project'>
-            <div className='project__container'>
+            <div className={`project__container ${index%2 === 0 ? 'project__container--invert':''}`}>
                 <img 
                 className='project__img'
                 src={img}/>

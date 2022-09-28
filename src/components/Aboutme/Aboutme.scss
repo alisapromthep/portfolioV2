@@ -15,6 +15,9 @@
         align-items: center;
         justify-content: space-between;
     }
+    @include desktop {
+        width: 60rem;
+    }
 
 
     &__img{

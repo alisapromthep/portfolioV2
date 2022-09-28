@@ -12,17 +12,22 @@
 
     @include tablet{
         flex-direction: row;
+        @include tablet-padding;
+    }
+
+    @include desktop {
+        width: 60rem;
     }
 
     &__formbox{
-        width: 100%;
+        width: 50%;
     }
 
     &__img{
         display: none;
 
         @include tablet {
-            display: static;
+            display: inline;
         }
         &-sent{
             position: absolute;

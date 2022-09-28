@@ -10,3 +10,8 @@ body {
     margin: 0;
     background-color: $primary;
 }
+
+main {
+    @include flex-column;
+    align-items: center;
+}

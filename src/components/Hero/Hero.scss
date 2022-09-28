@@ -2,11 +2,15 @@
 @use '../../styles/partials/mixins' as *;
 
 .hero {
-    min-height: 100vh;
+    height: 100vh;
     @include mobile-padding;
 
     @include tablet {
         @include tablet-padding;
+        height: 50vh;
+    }
+    @include desktop {
+        width: 60rem;
     }
 
     &__textbox{
@@ -40,7 +44,14 @@
             display:block;
             width: 20rem;
             top: 8rem;
-            right: -6rem;
+            right: -8rem;
+            z-index: 1;
+        }
+
+        @include desktop {
+            top: 14rem;
+            right: 6rem;
+            
         }
         
     }

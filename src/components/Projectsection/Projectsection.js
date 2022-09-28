@@ -16,6 +16,7 @@ const ProjectSection = () => {
             {projectData.map((project,index)=>{
                 return (
                     <Project key={index} 
+                    index={index}
                     name={project.name}
                     img={project.img}
                     description={project.description}

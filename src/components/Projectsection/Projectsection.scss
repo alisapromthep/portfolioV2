@@ -2,13 +2,16 @@
 @use '../../styles/partials/mixins' as *;
 
 .projects {
-    height: 170vh;
     position: relative;
+
     @include tablet{
         @include flex-column;
         @include tablet-padding;
     }
-    
+
+    @include desktop {
+        width: 60rem;
+    }
 
     &__img{
         position: absolute;
@@ -39,6 +42,7 @@
         @include flex-column;
         justify-content: center;
         align-items: center;
+
         @include tablet{
             position: static;
             padding-top: 5rem;

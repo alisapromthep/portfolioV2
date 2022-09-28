@@ -38,7 +38,7 @@ const Connect = () => {
                 <p>Thank you for sending me a message</p>:
                 <Form handleSubmit={handleSubmit}/>}
             </div>
-            <img className={formSubmit ? 'connect__img-sent':'connect__img'} src={coffeeandlaptop}/>
+            <img className={`connect__img ${formSubmit ? 'connect__img-sent':'g'}`} src={coffeeandlaptop}/>
             
         </section>
     )

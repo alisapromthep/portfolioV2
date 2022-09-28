@@ -4,7 +4,7 @@ import girl from '../../assets/images/girllaptop.png';
 
 const Hero = () => {
     return (
-        <div className='hero'>
+        <section className='hero'>
             <div className='hero__textbox'>
                 <h1 className='hero__headline'>Full Stack Developer</h1>
                 <p className='hero__tagline'>I turn design into functioning website. A former chemist, turn developer! 
@@ -14,7 +14,7 @@ const Hero = () => {
             <img
             className='hero__img'
             src={girl} alt="girl on a high chair working with a laptop on her lap"/>
-        </div>
+        </section>
     )
 }
 
