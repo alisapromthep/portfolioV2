@@ -4,7 +4,7 @@ import Form from '../Form/Form';
 import emailjs from '@emailjs/browser';
 import coffeeandlaptop from '../../assets/images/coffeeandlaptop.png';
 
-const Connect = () => {
+const Connect = ({connectRef}) => {
 
     const [formSubmit, setFormSubmit] = useState(false);
 
@@ -31,9 +31,9 @@ const Connect = () => {
 
     }
     return (
-        <section className='connect'>
+        <section ref={connectRef}className='connect'>
             <div className='connect__formbox'>
-                <h2>Connect with me</h2>
+                <h2>Say hi</h2>
                 {formSubmit ?
                 <p>Thank you for sending me a message</p>:
                 <Form handleSubmit={handleSubmit}/>}

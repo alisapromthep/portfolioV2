@@ -30,11 +30,16 @@
         align-items: inherit;
     }
     &__link {
-        list-style: none;
         text-decoration: none;
-        margin-left: 0.5rem;
         color:$primaryLight;
-        text-decoration: none;
+
+        &-item{
+            list-style: none;
+            text-decoration: none;
+            color: $primaryLight;
+            margin-left: 0.5rem;
+            cursor: pointer;
+        }
     }
 
 }

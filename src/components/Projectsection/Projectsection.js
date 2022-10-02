@@ -6,6 +6,7 @@ import {projectData} from '../../data/projectData';
 
 
 const ProjectSection = () => {
+    
     return (
         <section className='projects'>
         <img src={girlOnTheFloor} alt="girl working on the floor with a laptop and paper spread out"

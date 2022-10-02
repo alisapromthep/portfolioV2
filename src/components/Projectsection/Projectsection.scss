@@ -3,10 +3,14 @@
 
 .projects {
     position: relative;
+    border: 2px solid white;
+    height: 250vh;
+    padding: 2rem;
 
     @include tablet{
         @include flex-column;
         @include tablet-padding;
+        height: auto;
     }
 
     @include desktop {

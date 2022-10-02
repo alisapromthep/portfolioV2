@@ -26,6 +26,7 @@
         }
 
     }
+    
 
     &__img {
         border-radius: 10px;
@@ -84,8 +85,20 @@
         margin: 0.25rem;
 
 
+
         &-box{
             display: flex;
+            @include tablet{
+                width: 47rem;
+
+            }
+
+            &--reverse {
+                @include tablet{
+                    flex-direction: row-reverse;
+
+                }
+            }
         }
     }
 

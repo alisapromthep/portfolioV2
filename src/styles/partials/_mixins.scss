@@ -43,7 +43,12 @@
     padding: 0.5rem;
     color: $primaryLight;
     margin-top: 1rem;
-    
+    cursor: pointer;
+
+    &:hover { 
+        background-color: rgba(245,234,229,0.6);
+        color: $primaryDark;
+    }
 }
 
 

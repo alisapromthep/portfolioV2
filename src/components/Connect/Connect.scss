@@ -2,17 +2,17 @@
 @use '../../styles/partials/mixins' as *;
 
 .connect {
-    height: 60vh;
     background-color: $primary;
     @include mobile-padding;
     @include flex-column;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    min-height: 100vh;
 
     @include tablet{
         flex-direction: row;
         @include tablet-padding;
+        width: 54rem;
     }
 
     @include desktop {
@@ -20,7 +20,10 @@
     }
 
     &__formbox{
-        width: 50%;
+
+        @include tablet{
+            width: 50%;
+        }
     }
 
     &__img{

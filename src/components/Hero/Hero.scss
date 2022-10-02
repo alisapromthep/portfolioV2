@@ -7,7 +7,7 @@
 
     @include tablet {
         @include tablet-padding;
-        height: 50vh;
+        height: 80vh;
     }
     @include desktop {
         width: 60rem;
@@ -15,6 +15,8 @@
 
     &__textbox{
         position: relative;
+        border: 2px solid $primaryLight;
+        padding: 2rem;
 
         @include tablet{
             width: 100%;
@@ -27,6 +29,7 @@
         @include tablet {
             font-size: 4rem;
             margin-top: 0;
+
         }
     }
     &__tagline {

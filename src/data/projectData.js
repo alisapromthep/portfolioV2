@@ -29,13 +29,9 @@ export const projectData = [
                 "url": "https://track-reaction.netlify.com"
             },
             {
-                "name": "Front-end",
+                "name": "Github",
                 "url": "https://github.com/alisapromthep/alisa-promthep-reaction-client"
             },
-            {
-                "name": "Back-end",
-                "url": "https://github.com/alisapromthep/alisa-promthep-reaction-server"
-            }
         ],
         "casestudy": {
             "authentication & authorization": "JWT, building a back-end database to store user information",

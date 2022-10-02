@@ -35,7 +35,7 @@ const Form = ({handleSubmit}) => {
                 />
             </label>
             <button className='form__button'>
-                Connect
+                Send message
             </button>
         </form>
     )
