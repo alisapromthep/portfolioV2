@@ -3,7 +3,7 @@ import apphoto from '../../assets/images/ap1.JPG';
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 
-const Aboutme = (aboutRef) => {
+const Aboutme = ({aboutRef}) => {
     const {ref: aboutMe, inView: aboutMeInView} = useInView({
         threshold: 0.5,
         triggerOnce: true,
@@ -11,10 +11,11 @@ const Aboutme = (aboutRef) => {
 
     return (
         <section ref={aboutMe} className={`aboutme reveal ${aboutMeInView ? 'reveal--active':''}`}>
-            <div className='aboutme__img-box'>
+            <div ref={aboutRef}className='aboutme__img-box'>
                 <div className='aboutme__img-decor'></div>
                 <div className='aboutme__img-container'>
-                    <img className='aboutme__img' src={apphoto}/>
+                    <img 
+                    className='aboutme__img' src={apphoto}/>
                 </div>
             </div>
             <div className='aboutme__textbox'>

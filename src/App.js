@@ -10,16 +10,27 @@ import React, {useRef} from "react";
 function App() {
 
   const connectRef = useRef(null);
-  const aboutRef = useRef(null);
+  const aboutRef = React.createRef();
   const projectRef = useRef(null);
 
   const handleScrollToConnect = ()=>{
     window.scrollTo({top: connectRef.current.offsetTop, behavior:'smooth'});
   };
 
+  const handleScrollToAbout =()=>{
+    aboutRef.current.scrollIntoView({block:'start',bahavior:'smooth',inline:'nearest'});
+  }
+
+  const handleScrollToProject =()=>{
+    window.scrollTo({top: projectRef.current.offsetTop, behavior:'smooth'});
+  }
+
+
+
   return (
     <>
-      <NavBar/>
+      <NavBar handleScrollToAbout={handleScrollToAbout}
+      handleScrollToProject={handleScrollToProject}/>
       <main>
         <Hero handleScrollToConnect={handleScrollToConnect}/>
         <Aboutme aboutRef={aboutRef}/>

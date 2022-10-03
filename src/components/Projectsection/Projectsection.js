@@ -5,10 +5,10 @@ import girlOnTheFloor from '../../assets/images/girlworking.png';
 import {projectData} from '../../data/projectData';
 
 
-const ProjectSection = () => {
+const ProjectSection = ({projectRef}) => {
     
     return (
-        <section className='projects'>
+        <section ref={projectRef}className='projects'>
         <img src={girlOnTheFloor} alt="girl working on the floor with a laptop and paper spread out"
         className='projects__img'
         />

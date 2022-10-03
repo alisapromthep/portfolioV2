@@ -2,7 +2,7 @@ import './NavBar.scss';
 import React from 'react'
 import {FaLinkedin, FaGithubSquare} from 'react-icons/fa';
 
-const NavBar = ({handleScrollToAbout}) => {
+const NavBar = ({handleScrollToAbout, handleScrollToProject}) => {
     return (
         <div className='nav'>
             <p className='nav__name'>A.P.</p>
@@ -15,7 +15,8 @@ const NavBar = ({handleScrollToAbout}) => {
                         >About</a>
                         </li>
                     <li className='nav__link-item'>
-                        <a className='nav__link'>Projects</a>
+                        <a className='nav__link'
+                        onClick={handleScrollToProject}>Projects</a>
                         </li>
                     <li className='nav__link-item'>
                         <a
