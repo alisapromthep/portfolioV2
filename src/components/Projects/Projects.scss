@@ -6,7 +6,7 @@
     position: relative;
 
     @include tablet {
-        margin: 3rem 0;
+        width: 100%;
     }
 
     &__container {
@@ -81,7 +81,7 @@
         @include button;
         text-decoration: none;
         text-transform: capitalize;
-        border: 1px solid;
+        border: 1px solid $primaryLight;
         margin: 0.25rem;
 
 
@@ -89,7 +89,7 @@
         &-box{
             display: flex;
             @include tablet{
-                width: 47rem;
+                width: 36rem;
 
             }
 

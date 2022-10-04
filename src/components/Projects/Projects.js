@@ -6,7 +6,7 @@ import React from 'react';
 const Projects = ({index,name,img,description,links,techIcon,tech}) => {
 
     const {ref:project, inView:projectInView} = useInView({
-        threshold: 0.8,
+        threshold: 0.5,
         triggerOnce: true,
     });
 

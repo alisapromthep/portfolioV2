@@ -4,13 +4,14 @@
 .projects {
     position: relative;
     border: 2px solid white;
-    height: 250vh;
-    padding: 2rem;
+    height: 255vh;
+    padding: 2rem 2rem;
 
     @include tablet{
         @include flex-column;
         @include tablet-padding;
         height: auto;
+        width: 90%;
     }
 
     @include desktop {
