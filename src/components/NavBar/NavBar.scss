@@ -1,5 +1,7 @@
 @use '../../styles/partials/colors' as *;
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/animation' as *;
+
 
 .nav {
     display: flex;
@@ -34,17 +36,16 @@
         color:$primaryLight;
         background-color: $primary;
 
-        &:hover{
-            text-decoration: underline;
-
-        }
-
         &-item{
             list-style: none;
             text-decoration: none;
             color: $primaryLight;
             margin-left: 0.5rem;
             cursor: pointer;
+
+            &:hover {
+                animation: bounce 1s linear infinite;
+            }
         }
     }
 

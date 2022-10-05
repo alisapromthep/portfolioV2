@@ -9,10 +9,12 @@ const ProjectSection = ({projectRef}) => {
     
     return (
         <section ref={projectRef}className='projects'>
-        <img src={girlOnTheFloor} alt="girl working on the floor with a laptop and paper spread out"
-        className='projects__img'
-        />
-        <h2 className='projects__headline'>Projects</h2>
+            <div className='projects__header'>
+                <img src={girlOnTheFloor} alt="girl working on the floor with a laptop and paper spread out"
+                className='projects__img'
+                />
+                <h2 className='projects__headline'>Projects</h2>
+            </div>
         <div className='projects__box'>
             {projectData.map((project,index)=>{
                 return (
