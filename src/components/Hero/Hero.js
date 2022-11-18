@@ -1,22 +1,22 @@
 import './Hero.scss';
-import React from 'react';
-import girl from '../../assets/images/girllaptop.png';
+import {ReactComponent as Apwork} from '../../assets/images/ap-work.svg';
 
 const Hero = ({handleScrollToConnect}) => {
 
     return (
         <section className='hero'>
             <div className='hero__textbox'>
-                <h1 className='hero__headline'>Full Stack Developer</h1>
-                <p className='hero__tagline'>I turn design into functioning website. A former chemist, turn developer! 
-                I building, designing to make lives easier. </p>
+                <h1 className='hero__headline--smaller'>I'm Alisa Promthep</h1>
+                <h2 className='hero__headline'>a Software Developer</h2>
+                <p className='hero__tagline'>I love building digital products, with dreams and ambition to build tools, or applications for better lives. A side from technology, I am passionate in art, science and education. </p>
                 <button className='hero__button'
                 onClick={handleScrollToConnect}
-                >Let's connect</button>
+                >Send me a message</button>
             </div>
-            <img
-            className='hero__img'
-            src={girl} alt="girl on a high chair working with a laptop on her lap"/>
+            <div className='hero__img-container'>
+                <Apwork className='hero__img'/>
+                <div className='hero__circle'></div>
+            </div>
         </section>
     )
 }

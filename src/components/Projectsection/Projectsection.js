@@ -1,8 +1,8 @@
 import React from 'react';
 import './Projectsection.scss';
 import Project from '../Projects/Projects';
-import girlOnTheFloor from '../../assets/images/girlworking.png';
 import {projectData} from '../../data/projectData';
+import {ReactComponent as ApProject} from '../../assets/images/ap-project.svg';
 
 
 const ProjectSection = ({projectRef}) => {
@@ -10,9 +10,7 @@ const ProjectSection = ({projectRef}) => {
     return (
         <section ref={projectRef}className='projects'>
             <div className='projects__header'>
-                <img src={girlOnTheFloor} alt="girl working on the floor with a laptop and paper spread out"
-                className='projects__img'
-                />
+                <ApProject className='projects__img'/>
                 <h2 className='projects__headline'>Projects</h2>
             </div>
         <div className='projects__box'>

@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import Form from '../Form/Form';
 import emailjs from '@emailjs/browser';
 import coffeeandlaptop from '../../assets/images/coffeeandlaptop.png';
+import {ReactComponent as ApCoffee} from '../../assets/images/ap-coffee.svg';
 
 const Connect = ({connectRef}) => {
 
@@ -33,12 +34,12 @@ const Connect = ({connectRef}) => {
     return (
         <section ref={connectRef}className='connect'>
             <div className='connect__formbox'>
-                <h2>Say hi</h2>
+                <h2>Let's connect, or simply say Hi!</h2>
                 {formSubmit ?
                 <p>Thank you for sending me a message</p>:
                 <Form handleSubmit={handleSubmit}/>}
             </div>
-            <img className={`connect__img ${formSubmit ? 'connect__img-sent':'g'}`} src={coffeeandlaptop}/>
+            <ApCoffee className={`connect__img ${formSubmit ? 'connect__img-sent':'g'}`}/>
             
         </section>
     )

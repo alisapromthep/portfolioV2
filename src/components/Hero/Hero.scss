@@ -25,17 +25,38 @@
 
     &__headline{
         width: 100%;
+        margin: 0;
 
         @include tablet {
             font-size: 4rem;
             margin-top: 0;
 
         }
+
+        &--smaller{
+            font-size: 2rem;
+            margin: 0;
+        }
     }
     &__tagline {
         @include tablet{
             width: 50%;
             font-size: 1.2rem;
+        }
+    }
+
+    &__circle{
+        display: none;
+
+        @include tablet{
+            display: block;
+            position:absolute;
+            top: 11rem;
+            left: 51rem;
+            width: 20rem;
+            height: 20rem;
+            border-radius: 100%;
+            background-color: $primaryLight;
         }
     }
 
@@ -46,6 +67,7 @@
         @include tablet{
             display:block;
             width: 20rem;
+            height: 30rem;
             top: 10rem;
             right: -8rem;
             z-index: 1;
@@ -55,6 +77,14 @@
             top: 14rem;
             right: 6rem;
             
+        }
+
+        &-container{
+            display: none;
+
+            @include tablet{
+                display: block;
+            }
         }
         
     }

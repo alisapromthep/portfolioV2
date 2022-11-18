@@ -1,6 +1,7 @@
 import './Projects.scss'
 import { useInView } from 'react-intersection-observer';
 
+
 import React from 'react';
 
 const Projects = ({index,name,img,description,links,techIcon,tech}) => {
