@@ -30,7 +30,20 @@
         display:flex;
         justify-content: space-between;
         align-items: inherit;
+        padding-left: 0.5rem;
     }
+
+    &__icon{
+        width: 1rem;
+
+        @include tablet{
+            width: 1.5rem;
+        }
+        @include desktop {
+            width: 2rem;
+        }
+    }
+
     &__link {
         text-decoration: none;
         color:$primaryLight;
@@ -40,8 +53,12 @@
             list-style: none;
             text-decoration: none;
             color: $primaryLight;
-            margin-left: 0.5rem;
+            margin-right: 0.5rem;
             cursor: pointer;
+
+            @include tablet {
+                margin-right: 1rem;
+            }
 
             &:hover {
                 animation: bounce 1s linear infinite;

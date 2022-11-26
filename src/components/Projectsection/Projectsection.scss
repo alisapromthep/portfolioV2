@@ -2,9 +2,7 @@
 @use '../../styles/partials/mixins' as *;
 
 .projects {
-    border: 2px solid white;
     padding: 0 2rem 2rem 2rem;
-
 
     @include tablet{
         @include flex-column;
@@ -23,35 +21,24 @@
 
         @include tablet{
             flex-direction: row;
-            position: relative;
-            height: 8rem;
-
+        }
+        @include desktop{
+            justify-content: flex-start;
         }
     }
 
     &__img{
-        position: relative;
-        top: -4rem;
-        left: -4rem;
-        width: 12rem;
-        height: 15rem;
+        width: 15rem;
+        height: auto;
 
-        @include tablet{
-            top: -6rem;
-            left: -10rem;
+        @include desktop {
             width: 20rem;
         }
     }
 
     &__headline {
-        margin-top: -2rem;
+        margin-top: 1rem;
         margin-bottom: 2rem;
-        
-        
-        @include  tablet{
-            position: absolute;
-            right: 7rem;
-        }
 
     }
 

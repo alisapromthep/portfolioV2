@@ -4,8 +4,9 @@
 
 .form {
     @include flex-column;
+    width: 100%;
     @include tablet {
-        width: 100%;
+        max-width: 30rem;
 
     }
 

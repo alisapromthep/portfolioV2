@@ -7,12 +7,11 @@
     @include flex-column;
     justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
+    width: 100%;
+    
 
     @include tablet{
-        flex-direction: row;
         @include tablet-padding;
-        width: 45rem;
     }
 
     @include desktop {
@@ -20,20 +19,27 @@
     }
 
     &__formbox{
+        width: 100%;
+        display: flex;
+        max-width: 28rem;
 
         @include tablet{
-            width: 50%;
+            max-width: none;
+            justify-content: space-between;
         }
+
     }
 
     &__img{
         display: none;
 
         @include tablet {
-            display: inline;
-            position: relative;
-            left: 2rem;
+            display: block;
+            align-items: flex-start;
+            width: 25rem;
+            margin: 2rem;
         }
+    
         &-sent{
             position: absolute;
             top: 10rem;

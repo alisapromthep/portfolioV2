@@ -33,13 +33,13 @@ const Connect = ({connectRef}) => {
     }
     return (
         <section ref={connectRef}className='connect'>
+            <h2>Send me a message!</h2>
             <div className='connect__formbox'>
-                <h2>Let's connect, or simply say Hi!</h2>
                 {formSubmit ?
                 <p>Thank you for sending me a message</p>:
                 <Form handleSubmit={handleSubmit}/>}
+                <ApCoffee className={`connect__img ${formSubmit ? 'connect__img-sent':'g'}`}/>
             </div>
-            <ApCoffee className={`connect__img ${formSubmit ? 'connect__img-sent':'g'}`}/>
             
         </section>
     )

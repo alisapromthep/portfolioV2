@@ -2,12 +2,14 @@
 @use '../../styles/partials/mixins' as *;
 
 .hero {
-    height: 100vh;
+    height: 80vh;
     max-width: 35rem;
     @include mobile-padding;
+    display: flex;
 
     @include tablet {
         @include tablet-padding;
+        height: auto;
         max-width: 60rem;
         display: flex;
         justify-content: space-between;
