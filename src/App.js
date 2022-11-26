@@ -33,7 +33,7 @@ function App() {
       handleScrollToProject={handleScrollToProject}/>
       <main>
         <Hero handleScrollToConnect={handleScrollToConnect}/>
-        <Aboutme aboutRef={aboutRef}/>
+        {/* <Aboutme aboutRef={aboutRef}/> */}
         <Projectsection projectRef={projectRef}/>
         <Connect connectRef={connectRef} />
       </main>

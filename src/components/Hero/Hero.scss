@@ -3,23 +3,26 @@
 
 .hero {
     height: 100vh;
+    max-width: 35rem;
     @include mobile-padding;
 
     @include tablet {
         @include tablet-padding;
-        height: 80vh;
+        max-width: 60rem;
+        display: flex;
+        justify-content: space-between;
     }
     @include desktop {
-        width: 60rem;
+        max-width: none;
+        width: 100%;
+        justify-content: space-around;
     }
 
     &__textbox{
-        position: relative;
-        border: 2px solid $primaryLight;
-        padding: 2rem;
 
         @include tablet{
-            width: 100%;
+            width: 50%;
+            height: 100%;
         }
     }
 
@@ -30,53 +33,39 @@
         @include tablet {
             font-size: 4rem;
             margin-top: 0;
+            max-width: 40rem;
+        }
 
+        @include desktop {
+            font-size: 6rem;
+            max-width: none;
         }
 
         &--smaller{
             font-size: 2rem;
             margin: 0;
+            display: block;
+
+            @include desktop {
+                font-size: 2.5rem;
+            }
+            
         }
     }
     &__tagline {
         @include tablet{
-            width: 50%;
-            font-size: 1.2rem;
-        }
-    }
-
-    &__circle{
-        display: none;
-
-        @include tablet{
-            display: block;
-            position:absolute;
-            top: 11rem;
-            left: 51rem;
-            width: 20rem;
-            height: 20rem;
-            border-radius: 100%;
-            background-color: $primaryLight;
+            width: 100%;
         }
     }
 
     &__img {
-        position: absolute;
         display: none;
 
         @include tablet{
             display:block;
-            width: 20rem;
-            height: 30rem;
-            top: 10rem;
-            right: -8rem;
-            z-index: 1;
         }
 
         @include desktop {
-            top: 14rem;
-            right: 6rem;
-            
         }
 
         &-container{
