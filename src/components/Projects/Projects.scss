@@ -14,7 +14,7 @@
         position:relative;
         overflow: hidden;
         border-radius: 10px;
-        height: 16rem;
+        height: 20rem;
         width: 15rem;
 
         &--invert {
@@ -26,20 +26,49 @@
             display: flex;
         }
 
+        @include desktop {
+            justify-content: space-between;
+            align-items: center;
+            height: 30rem;
+        }
+
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 1.2rem;
+        margin: 0;
+        margin-bottom: 0.5rem;
+        
+
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
+
+    &__description {
+        @include desktop{
+            margin: 0;
+        }
     }
     
 
     &__img {
         border-radius: 10px;
         object-fit: cover;
-        height: 16rem;
+        height: 20rem;
         width: 15rem;
         opacity: 0.6;
         transition: opacity 0.5s ease-in-out;
 
         @include tablet{
-            width: 22rem;
-            margin-right: 1rem; 
+            width: 20rem;
+            margin: 0 1rem;
+        }
+        
+        @include desktop {
+            height: 30rem;
+            width: 40%;
         }
 
         &:hover {
@@ -51,24 +80,29 @@
     &__label-box {
         border-radius: 10px;
         overflow: hidden;
-        height: 16rem;
+        height: 20rem;
         width: 15rem;
         position: absolute;
-        bottom:-12rem;
+        bottom:-17rem;
         background-color: $primaryDark;
         @include flex-column;
         align-items: center;
-        padding: 0.5rem;
+        padding: 1rem;
         font-size: 0.9rem;
         transition: all 0.3s ease-in-out;
 
         @include tablet {
-            width: 25rem;
+            width: 20rem;
             height: 20rem;
-            background-color: transparent;
             position: static;
-            padding: 0 2rem;
+            padding: 1rem;
+            margin: 0 1rem;
+        }
 
+        @include desktop {
+            height: 30rem;
+            width: 80%;
+            justify-content: center;
         }
 
         &:hover{
@@ -84,15 +118,19 @@
         text-transform: capitalize;
         border: 1px solid $primaryLight;
         margin: 0.25rem;
+        font-size: 1rem;
+        font-weight: 800;
+
+        @include tablet {
+            margin: 1rem 0;
+        }
 
 
 
         &-box{
+            width: 100%;
             display: flex;
-            @include tablet{
-                width: 36rem;
-
-            }
+            justify-content: flex-start;
 
             &--reverse {
                 @include tablet{
@@ -120,6 +158,11 @@
         &-icon {
             height: 2rem;
             padding: 0.2rem;
+
+            @include desktop{
+                margin-top: 0.5rem;
+                height: 2.5rem;
+            }
         }
     }
 }

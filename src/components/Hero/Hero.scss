@@ -9,15 +9,14 @@
 
     @include tablet {
         @include tablet-padding;
-        height: auto;
         max-width: 60rem;
         display: flex;
         justify-content: space-between;
     }
     @include desktop {
+        @include desktop-padding;
         max-width: none;
         width: 100%;
-        justify-content: space-around;
     }
 
     &__textbox{
@@ -31,6 +30,7 @@
     &__headline{
         width: 100%;
         margin: 0;
+        line-height: 3.5rem;
 
         @include tablet {
             font-size: 4rem;
@@ -39,8 +39,9 @@
         }
 
         @include desktop {
-            font-size: 6rem;
+            font-size: 4.5rem;
             max-width: none;
+            width: 50rem;
         }
 
         &--smaller{
@@ -82,6 +83,7 @@
 
     &__button {
         @include button;
+        font-size: 1rem;
         @include tablet {
             font-size: 1.2rem;
         }

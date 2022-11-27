@@ -12,6 +12,12 @@
     }
 }
 
+@mixin large-desktop {
+    @media (min-width: 90rem){
+        @content;
+    }
+}
+
 @mixin mobile-padding {
     padding: 2rem;
 }
@@ -44,11 +50,13 @@
     color: $primaryLight;
     margin-top: 1rem;
     cursor: pointer;
+    transition: 0.25s;
 
-    &:hover { 
+
+    &:hover,
+    &:focus { 
         background-color: rgba(245,234,229,0.6);
-        color: $primaryDark;
-        border-color: $primaryLight;
+        color: $secondaryDark;
     }
 }
 

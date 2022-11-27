@@ -1,12 +1,12 @@
 import './NavBar.scss';
-import React from 'react'
 import {FaLinkedin, FaGithubSquare} from 'react-icons/fa';
+import {Link} from 'react-router-dom';
 
 const NavBar = ({handleScrollToAbout, handleScrollToProject}) => {
     return (
         <div className='nav'>
-            <p className='nav__name'>A.P.</p>
-            <p className='nav__name--tablet'>Alisa Promthep</p>
+            <Link to='/' className='nav__name'>A.P.</Link>
+            <Link to='/' className='nav__name--tablet'>Alisa Promthep</Link>
             <ul className='nav__list'>
                 <li className='nav__link-item'>
                     <a className='nav__link'
@@ -26,16 +26,16 @@ const NavBar = ({handleScrollToAbout, handleScrollToProject}) => {
                     Resume
                     </a>
                     </li>
-                <li className='nav__link-item nav__icon'>
+                <li className='nav__link-item'>
                     <a href="https://www.linkedin.com/in/alisa-promthep/"
                 target="_blank"
-                rel="noopener"><FaLinkedin color="#F5EAE5" size={'auto'}/></a>
+                rel="noopener"><FaLinkedin className='nav__icon' size={'auto'}/></a>
                 </li>
-                <li className='nav__link-item nav__icon'><a 
+                <li className='nav__link-item'><a 
                 href="https://github.com/alisapromthep"
                 target="_blank"
                 rel="noopener">
-                <FaGithubSquare color="#F5EAE5" size={'auto'}/>
+                <FaGithubSquare size={'auto'} className='nav__icon'/>
                 </a></li>
             </ul>
         </div>

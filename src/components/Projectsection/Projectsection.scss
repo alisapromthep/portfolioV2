@@ -3,16 +3,18 @@
 
 .projects {
     padding: 0 2rem 2rem 2rem;
+    width: 100%;
 
     @include tablet{
         @include flex-column;
         @include tablet-padding;
-        width: 90%;
+        align-items: center;
+    }
+    @include desktop {
+        @include desktop-padding;
     }
 
-    @include desktop {
-        width: 60rem;
-    }
+
 
     &__header{
         @include flex-column;

@@ -38,7 +38,7 @@ const Connect = ({connectRef}) => {
                 {formSubmit ?
                 <p>Thank you for sending me a message</p>:
                 <Form handleSubmit={handleSubmit}/>}
-                <ApCoffee className={`connect__img ${formSubmit ? 'connect__img-sent':'g'}`}/>
+                <ApCoffee className='connect__img'/>
             </div>
             
         </section>
