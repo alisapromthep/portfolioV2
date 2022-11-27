@@ -23,7 +23,6 @@
     &__img{
         width: 12.5rem;
         object-fit: cover;
-        position: relative;
 
         @include tablet{
             width: 15rem;
@@ -34,7 +33,7 @@
         
         
         &-container {
-            border-radius: 50%;
+            @include border-radius;
             width: 12.5rem;
             height: 12.5rem;
             overflow: hidden;

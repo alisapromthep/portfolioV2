@@ -23,6 +23,7 @@
 
         @include tablet{
             flex-direction: row;
+            margin: -5rem 0;
         }
         @include desktop{
             justify-content: flex-start;
@@ -33,8 +34,12 @@
         width: 15rem;
         height: auto;
 
-        @include desktop {
+        @include tablet {
             width: 20rem;
+        }
+
+        @include desktop {
+            width: 25rem;
         }
     }
 

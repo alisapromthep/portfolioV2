@@ -31,6 +31,10 @@
 
     &__button{
         @include button;
+
+        &:hover .button__icon{
+            @include sending-animation;
+        }
     }
 
 }

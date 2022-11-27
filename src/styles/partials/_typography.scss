@@ -34,12 +34,6 @@ body {
     font-weight: 500;
 }
 
-h1{
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 5.5rem;
-}
-
 h2 {
     font-weight: 800;
     @include tablet {
@@ -50,14 +44,14 @@ h2 {
     }
 }
 
-p, a, li{
+p,li{
     font-size: 0.9rem;
     @include tablet {
         font-size: 1rem;
     }
 
     @include desktop {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -69,6 +63,6 @@ label, input {
 button {
     font-family: 'nunito', sans-serif;
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 

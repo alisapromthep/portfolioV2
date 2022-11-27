@@ -1,5 +1,6 @@
 import React from 'react';
-import './Form.scss'
+import './Form.scss';
+import {FaTelegramPlane} from 'react-icons/fa';
 
 const Form = ({handleSubmit}) => {
     return (
@@ -36,6 +37,7 @@ const Form = ({handleSubmit}) => {
             </label>
             <button className='form__button'>
                 Send message
+                <FaTelegramPlane className='button__icon'/>
             </button>
         </form>
     )

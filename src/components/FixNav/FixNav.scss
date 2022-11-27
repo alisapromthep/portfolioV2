@@ -1,0 +1,27 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/typography' as*;
+.fixnav {
+    background-color: $primaryDark;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem 0 0 2rem;
+    padding: 0 0.5rem;
+    position: fixed;
+    right: 0px;
+    z-index: 1;
+}
+
+.nav{
+    &__button{
+        background: none;
+        text-decoration: none;
+        border: none;
+        font-size: 0.9rem;
+
+        @include desktop{
+            font-size: 1.2rem;
+        }
+    }
+
+}

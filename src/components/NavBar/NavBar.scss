@@ -8,7 +8,12 @@
     justify-content: space-between;
     align-items: center;
     @include mobile-padding;
+    padding-right: 0;
     font-weight: 800;
+
+    @include tablet {
+        margin: 0 2rem;
+    }
 
     @include desktop {
         @include desktop-padding;
@@ -16,6 +21,11 @@
 
     &__name{
         color: $primaryLight;
+        text-decoration: none;
+
+        &:hover {
+            color: $secondaryDark;
+        }
 
         @include tablet {
             display: none;
@@ -28,7 +38,7 @@
                 color: $primaryLight;
             }
 
-            &:hover, .nav__name{
+            &:hover{
                 color: $secondaryDark;
             }
         }
@@ -42,21 +52,12 @@
     }
 
     &__icon{
-        width: 1rem;
-        color: $primaryLight;
-
-        @include tablet{
-            width: 1.5rem;
-        }
-        @include desktop {
-            width: 2rem;
-        }
+        @include react-icon;
     }
 
     &__link {
         text-decoration: none;
         color:$primaryLight;
-        background-color: $primary;
 
         &-item{
             list-style: none;

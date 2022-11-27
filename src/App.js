@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage/HomePage';
 import CaseStudyPage from './pages/CaseStudyPage/CaseStudyPage';
 import React, {useRef} from "react";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import LoaderPage from './pages/LoaderPage/LoaderPage';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   const projectRef = useRef(null);
 
   const handleScrollToAbout =()=>{
-    aboutRef.current.scrollIntoView({block:'start',bahavior:'smooth',inline:'nearest'});
+    window.scrollTo({top: aboutRef.current.offsetTop, behavior:'smooth'});
     }
 
     const handleScrollToProject =()=>{

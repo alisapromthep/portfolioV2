@@ -2,12 +2,13 @@
 @use '../../styles/partials/mixins' as *;
 
 .connect {
-    background-color: $primary;
     @include mobile-padding;
     @include flex-column;
+    background-color: $primaryDark;
+    @include border-radius;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    margin: 2rem;
     
 
     @include tablet{
@@ -38,7 +39,7 @@
         @include tablet {
             display: block;
             align-items: flex-start;
-            width: 25rem;
+            width: 35rem;
             margin: 2rem;
         }
     
@@ -49,5 +50,13 @@
 
         }
 
+    }
+}
+
+.modal {
+    &__icon{
+        margin: 1rem;
+        @include react-icon;
+        align-self: flex-end;
     }
 }

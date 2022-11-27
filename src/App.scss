@@ -11,11 +11,6 @@ body {
     background-color: $primary;
 }
 
-main {
-    @include flex-column;
-    align-items: center;
-}
-
 .reveal{
     position: relative;
     transform: translateY(150px);

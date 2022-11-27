@@ -4,6 +4,8 @@
 .project {
     margin: 1rem 0;
     position: relative;
+    display: flex;
+    justify-content: center;
     
 
     @include tablet {
@@ -30,6 +32,7 @@
             justify-content: space-between;
             align-items: center;
             height: 30rem;
+            max-width: 80%;
         }
 
     }
@@ -54,7 +57,7 @@
     
 
     &__img {
-        border-radius: 10px;
+        @include border-radius;
         object-fit: cover;
         height: 20rem;
         width: 15rem;

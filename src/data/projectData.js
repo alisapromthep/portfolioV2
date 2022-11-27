@@ -1,5 +1,5 @@
 import virtualWanderHome from '../assets/projects/virtualWanderHome.png';
-import allergyTrackingHome from '../assets/projects/allergyTrackingHome.png';
+import allergyTrackingHome from '../assets/projects/allergyTracking.png';
 import shutterstockHome from '../assets/projects/shutterstockHome.png';
 import whosthatpokemonHome from '../assets/projects/whosthatpokemonHome.png';
 import cssIcon from '../assets/icons/css-3.svg';

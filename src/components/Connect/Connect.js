@@ -2,10 +2,11 @@ import './Connect.scss';
 import React, {useState} from 'react';
 import Form from '../Form/Form';
 import emailjs from '@emailjs/browser';
-import coffeeandlaptop from '../../assets/images/coffeeandlaptop.png';
 import {ReactComponent as ApCoffee} from '../../assets/images/ap-coffee.svg';
+import {FaWindowClose} from 'react-icons/fa'
 
-const Connect = ({connectRef}) => {
+
+const Connect = ({connectRef, closeModal}) => {
 
     const [formSubmit, setFormSubmit] = useState(false);
 
@@ -32,7 +33,8 @@ const Connect = ({connectRef}) => {
 
     }
     return (
-        <section ref={connectRef}className='connect'>
+        <section className='connect'>
+            <FaWindowClose className='modal__icon' size='auto' onClick={closeModal}/>
             <h2>Send me a message!</h2>
             <div className='connect__formbox'>
                 {formSubmit ?
@@ -40,7 +42,6 @@ const Connect = ({connectRef}) => {
                 <Form handleSubmit={handleSubmit}/>}
                 <ApCoffee className='connect__img'/>
             </div>
-            
         </section>
     )
 }
