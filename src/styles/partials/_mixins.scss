@@ -57,6 +57,7 @@
     &:focus { 
         background-color: rgba(245,234,229,0.6);
         color: $secondaryDark;
+        border-color: $secondaryDark;
     }
 }
 

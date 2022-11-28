@@ -1,7 +1,7 @@
 import './FixNav.scss';
 import {FaLinkedin, FaGithubSquare, FaTelegramPlane} from 'react-icons/fa';
 
-function FixNav({handleScrollToAbout, handleScrollToProject}) {
+function FixNav({handleScrollToAbout, handleScrollToProject, openModal}) {
     return (
         <div className='fixnav'>
             <ul className='nav__list'>
@@ -23,7 +23,7 @@ function FixNav({handleScrollToAbout, handleScrollToProject}) {
                     Resume
                     </a>
                 </li>
-                <li className='nav__link-item'><button className='nav__button'><FaTelegramPlane className='nav__icon' size={'auto'}/></button></li>
+                <li className='nav__link-item'><button onClick={openModal}className='nav__button'><FaTelegramPlane className='nav__icon' size={'auto'}/></button></li>
                 <li className='nav__link-item'>
                     <a href="https://www.linkedin.com/in/alisa-promthep/"
                 target="_blank"

@@ -70,6 +70,7 @@
             //color: #E4E6F5;
             color:#344E8C;
             //color:#D5E1F6;
+            color:$secondaryDark;
             background: $primary;
             -webkit-background-clip: text;
             -webkit-text-stroke: 4px transparent;
@@ -117,7 +118,6 @@
 
         &:hover .button__icon{
             @include sending-animation;
-
         }
     }
 }

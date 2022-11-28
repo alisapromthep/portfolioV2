@@ -6,7 +6,7 @@ import {ReactComponent as ApCoffee} from '../../assets/images/ap-coffee.svg';
 import {FaWindowClose} from 'react-icons/fa'
 
 
-const Connect = ({connectRef, closeModal}) => {
+const Connect = ({closeModal}) => {
 
     const [formSubmit, setFormSubmit] = useState(false);
 

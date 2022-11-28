@@ -2,7 +2,7 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/typography' as*;
 .fixnav {
-    background-color: $primaryDark;
+    background-color: $secondaryDark;
     display: flex;
     align-items: center;
     border-radius: 2rem 0 0 2rem;
