@@ -42,7 +42,7 @@ export const projectData = [
         "id": 2,
         "name": "Shutterstock",
         "img": shutterstockHome,
-        "description": "A recreation of shutterstock homepage with additional feature section, and new full feature page, as proof of design concept for a 24 hours cross-collaboration hackathon with UX Designers ",
+        "description": "A recreation of Shutterstock homepage with additional features section, and a new feature page, as a proof of concept. The project was done in collbaration between Web Developers and UX Designers.",
         "techIcon": [jsIcon, reactIcon, sassIcon, cssIcon],
         "techstack": ["Javascript"," React" ,"SASS ", "CSS" ],
         "tools": "used git for working simultaneously, figma to guide design",
@@ -62,7 +62,7 @@ export const projectData = [
         "id": 3,
         "name": "Virtual Wanderer",
         "img": virtualWanderHome,
-        "description": "24 hours pair-programming: A full stack web application that takes you on a walk or a bike ride through pre-picked youtube videos.",
+        "description": "24 hours pair-programming: A full stack React web application that takes you on a leisurely walk or an adventurous bike ride through your choices between 3 different cities. We built a RESTApi, containing pre-selected youtube videos for the applications. ",
         "techIcon": [jsIcon, reactIcon, sassIcon, cssIcon,nodeIcon,expressIcon],
         "techstack": ["Javascript"," React" ,"SASS ", "CSS" , "NodeJs" ,"Express "],
         "links": [
@@ -79,9 +79,9 @@ export const projectData = [
     },
     {
         "id": 4,
-        "name": "Who's that Pokemon",
+        "name": "Who's that Pokemon?",
         "img": whosthatpokemonHome,
-        "description": "24 hours hackathon using Pokemon API and vanila javascript to create whos that pokemon game.",
+        "description": "24 hours hackathon using the Pokemon API and Document Object Model(DOM) methodd to create a pokemon identification game.",
         "techIcon": [jsIcon,sassIcon,cssIcon],
         "techstack": ["Javascript"  ,"SASS", "CSS"],
         "links": [

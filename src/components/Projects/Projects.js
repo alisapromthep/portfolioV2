@@ -45,7 +45,8 @@ const Projects = ({index,name,img,description,links,techIcon,tech}) => {
                 <div className='project__link-box'>
                 {links.map((link,index)=>{
                     return (
-                        <a key={index}className='project__link' href={link.url}>{link.name}</a>
+                        <a key={index}className='project__link' href={link.url} target="_blank"
+                        rel="noreferrer">{link.name}</a>
                     )
                 })}
                 </div>
