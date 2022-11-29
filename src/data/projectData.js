@@ -62,7 +62,7 @@ export const projectData = [
         "id": 3,
         "name": "Virtual Wanderer",
         "img": virtualWanderHome,
-        "description": "24 hours pair-programming: A full stack React web application that takes you on a leisurely walk or an adventurous bike ride through your choices between 3 different cities. We built a RESTApi, containing pre-selected youtube videos for the applications. ",
+        "description": "24 hours pair-programming: A full stack React web application that takes you on a leisurely walk or a bike ride through different cities. We built a RESTApi, containing pre-selected youtube videos for the applications. ",
         "techIcon": [jsIcon, reactIcon, sassIcon, cssIcon,nodeIcon,expressIcon],
         "techstack": ["Javascript"," React" ,"SASS ", "CSS" , "NodeJs" ,"Express "],
         "links": [

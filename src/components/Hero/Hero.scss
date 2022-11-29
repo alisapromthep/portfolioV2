@@ -3,7 +3,7 @@
 @use '../../styles/partials/animation' as *;
 
 .hero {
-    height: 90vh;
+    height: 80vh;
     @include mobile-padding;
     display: flex;
 

@@ -14,8 +14,8 @@ const Connect = ({closeModal}) => {
         event.preventDefault();
         
         const name = event.target.name.value;
-        const email = event.target.name.value;
-        const message = event.target.name.value;
+        const email = event.target.email.value;
+        const message = event.target.message.value;
 
         const serviceId = `${process.env.REACT_APP_EMAILJS_SERVICE_ID}`;
         const templateId= `${process.env.REACT_APP_EMAILJS_TEMPLATE_ID}`;
