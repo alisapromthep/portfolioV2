@@ -8,6 +8,7 @@
     display: flex;
 
     @include tablet {
+        height: 90vh;
         @include tablet-padding;
         flex-direction: row-reverse;
         justify-content: space-between;
