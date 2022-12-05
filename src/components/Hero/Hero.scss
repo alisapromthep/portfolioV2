@@ -5,11 +5,12 @@
 .hero {
     height: 80vh;
     @include mobile-padding;
-    display: flex;
+    
 
     @include tablet {
         height: 90vh;
         @include tablet-padding;
+        display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
@@ -24,6 +25,7 @@
     }
 
     &__container {
+        
         @include large-desktop {
             display: flex;
             justify-content: center;
@@ -32,6 +34,8 @@
     }
 
     &__textbox{
+        display: flex;
+        flex-direction: column;
 
         @include tablet{
             width: 50%;
@@ -113,6 +117,8 @@
     &__button {
         @include button;
         font-size: 1rem;
+        width: fit-content;
+
         @include tablet {
             font-size: 1.2rem;
         }
@@ -120,6 +126,13 @@
         &:hover .button__icon{
             @include sending-animation;
         }
+    }
+
+    &__arrow-down{
+        color: $primaryLight;
+        font-size: 1rem;
+        margin-top: 2rem;
+        animation: arrow-down-bounce 1s infinite linear;
     }
 }
 

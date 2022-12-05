@@ -13,6 +13,7 @@
 
     @include tablet{
         @include tablet-padding;
+        width: 40rem;
     }
 
     @include desktop {

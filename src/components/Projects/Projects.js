@@ -1,5 +1,6 @@
 import './Projects.scss'
 import { useInView } from 'react-intersection-observer';
+import {FaArrowUp} from 'react-icons/fa';
 
 
 import React from 'react';
@@ -20,7 +21,10 @@ const Projects = ({index,name,img,description,links,techIcon,tech}) => {
                     src={img}/>
                     <div className='project__label-box'>
                         <div className='project__info-box'>
-                            <p className='project__title'>{name}</p>
+                            <div className='project__title-box'>
+                                <p className='project__title'>{name}</p>
+                                <FaArrowUp className='project__arrow-up'/>
+                            </div>
                             <p className='project__description'>{description}</p>
                             {windowWidth < 779 ?                     
                             <ul className='project__tech-listbox'>

@@ -1,6 +1,6 @@
 import './Hero.scss';
 import {ReactComponent as Apwork} from '../../assets/images/ap-work.svg';
-import {FaTelegramPlane} from 'react-icons/fa';
+import {FaTelegramPlane, FaArrowDown} from 'react-icons/fa';
 
 const Hero = ({openModal}) => {
 
@@ -15,6 +15,8 @@ const Hero = ({openModal}) => {
                     <button className='hero__button'
                     onClick={openModal}
                     >Send me a message <FaTelegramPlane className='button__icon'/></button>
+                    <FaArrowDown className='hero__arrow-down'/>
+                    
                 </div>
             </section>
         </div>

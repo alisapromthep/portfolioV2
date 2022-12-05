@@ -1,5 +1,6 @@
 @use '../../styles/partials/colors' as *;
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/animation' as *;
 
 .project {
     margin: 1rem 0;
@@ -37,6 +38,11 @@
 
     }
 
+    &__title-box{
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__title {
         font-weight: 800;
         font-size: 1.2rem;
@@ -52,6 +58,16 @@
     &__description {
         @include desktop{
             margin: 0;
+        }
+    }
+
+    &__arrow-up{
+        color: $primaryLight;
+        font-size: 0.9rem;
+        animation: arrow-up-bounce 1s linear infinite;
+
+        @include tablet{
+            display: none;
         }
     }
     
