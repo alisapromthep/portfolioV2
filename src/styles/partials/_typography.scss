@@ -28,6 +28,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'cedarville-cursive';
+    src: url('../../assets/fonts/cedarville-cursive.woff') format('woff'),
+    url('../../assets/fonts/alternative-fonts/cedarville-cursive.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     color: $primaryLight;
     font-family: 'nunito', sans-serif;

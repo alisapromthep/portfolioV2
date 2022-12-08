@@ -16,35 +16,27 @@ const Projects = ({index,name,img,description,links,techIcon,tech}) => {
     return (
         <article ref={project} className={`project reveal ${projectInView ? 'reveal--active':''}`}>
             <div className={`project__container ${index%2 === 0 ? 'project__container--invert':''}`}>
+                <div className='project__img-container'>
                     <img 
                     className='project__img'
                     src={img}/>
+                </div>
                     <div className='project__label-box'>
                         <div className='project__info-box'>
                             <div className='project__title-box'>
                                 <p className='project__title'>{name}</p>
-                                <FaArrowUp className='project__arrow-up'/>
                             </div>
                             <p className='project__description'>{description}</p>
-                            {windowWidth < 779 ?                     
-                            <ul className='project__tech-listbox'>
-                                {tech.map((name,index)=>{
-                                    return (
-                                        <li key={index} className='project__tech-list'>{name}</li>
-                                    )
-                                })}
-                            </ul> : 
-                                <div className='project__tech'>
-                                {techIcon.map((icon,index)=>{
-                                    return (
-                                        <img 
-                                        className='project__tech-icon'
-                                        key={index} src={icon} alt={tech[index]}/>
-                                    )
-                                })}
-
-                            </div>
-                            } 
+                            <div className='project__tech'>
+                            {techIcon.map((icon,index)=>{
+                                return (
+                                    <img 
+                                    className='project__tech-icon'
+                                    key={index} src={icon} alt={tech[index]}/>
+                                )
+                            })}
+                        </div>
+                            
                         </div>
                 <div className='project__link-box'>
                 {links.map((link,index)=>{
