@@ -1,7 +1,6 @@
 import './Hero.scss';
 import {ReactComponent as Apwork} from '../../assets/images/ap-work.svg';
 import {FaTelegramPlane, FaArrowDown} from 'react-icons/fa';
-import ArtCredit from '../ArtCredit/ArtCredit';
 
 const Hero = ({openModal}) => {
 
@@ -10,7 +9,6 @@ const Hero = ({openModal}) => {
             <section className='hero'>
                 <div>
                     <Apwork className='hero__img'/>
-                    <p className='hero__art-credit'> By Nyche</p>
                 </div>
                 <div className='hero__textbox'>
                     <h1 className='hero__headline'>
