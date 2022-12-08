@@ -2,7 +2,7 @@ import './Connect.scss';
 import React, {useState} from 'react';
 import Form from '../Form/Form';
 import emailjs from '@emailjs/browser';
-import {ReactComponent as ApCoffee} from '../../assets/images/ap-coffee.svg';
+import {ReactComponent as ApCoffee} from '../../assets/images/ap-coffee-credit.svg';
 import {FaWindowClose} from 'react-icons/fa'
 
 

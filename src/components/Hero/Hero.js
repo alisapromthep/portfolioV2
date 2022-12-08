@@ -1,5 +1,5 @@
 import './Hero.scss';
-import {ReactComponent as Apwork} from '../../assets/images/ap-work.svg';
+import {ReactComponent as Apwork} from '../../assets/images/ap-work-credit.svg';
 import {FaTelegramPlane, FaArrowDown} from 'react-icons/fa';
 
 const Hero = ({openModal}) => {

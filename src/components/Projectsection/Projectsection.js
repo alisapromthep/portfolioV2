@@ -2,7 +2,7 @@ import React from 'react';
 import './Projectsection.scss';
 import Project from '../Projects/Projects';
 import {projectData} from '../../data/projectData';
-import {ReactComponent as ApProject} from '../../assets/images/ap-project.svg';
+import {ReactComponent as ApProject} from '../../assets/images/ap-project-credit.svg';
 
 
 const ProjectSection = ({projectRef}) => {
