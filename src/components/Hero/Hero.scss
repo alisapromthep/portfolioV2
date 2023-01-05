@@ -3,12 +3,10 @@
 @use '../../styles/partials/animation' as *;
 
 .hero {
-    height: 80vh;
     @include mobile-padding;
     
 
     @include tablet {
-        height: 90vh;
         @include tablet-padding;
         display: flex;
         flex-direction: row-reverse;
