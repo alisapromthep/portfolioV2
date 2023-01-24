@@ -34,8 +34,10 @@ export const projectData = [
             },
         ],
         "casestudy": {
-            "authentication & authorization": "JWT, building a back-end database to store user information",
-
+            "purpose": "This allergy tracking application was created to help people understand their body's reaction to food. Hopefully help them avoid things that makes them feel sick, or even causes allergic reaction. I grew up with one major allergy, but I started to noticed that my immune system seems to evolve and I become more sensitive to certain food. I developed this application with lots of icons in hopes to make tracking fun and easy.",
+            "challenges": {
+                
+            },
         }
     },
     {
@@ -56,7 +58,11 @@ export const projectData = [
                 "url": "https://github.com/Orloaft/shutterstock-hackathon"
             },
 
-        ]
+        ],
+        "casestudy": {
+            "purpose": "",
+            "challenges": "",
+        }
     },
     {
         "id": 3,
@@ -75,7 +81,11 @@ export const projectData = [
                 "url": "https://github.com/alisapromthep/virtual-wander"
             },
 
-        ]
+        ],
+        "casestudy": {
+            "purpose": "",
+            "challenges": "",
+        }
     },
     {
         "id": 4,
@@ -94,7 +104,11 @@ export const projectData = [
                 "url": "https://github.com/menu89/whos-that-pokmon"
             },
 
-        ]
+        ],
+        "casestudy": {
+            "purpose": "",
+            "challenges": "",
+        }
     },
 
 

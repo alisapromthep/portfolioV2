@@ -4,15 +4,19 @@
 
 
 .nav {
+    background-color: $secondaryDark;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    @include mobile-padding;
-    padding-right: 0;
-    font-weight: 800;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
 
     @include tablet {
-        margin: 0 2rem;
+        padding: 0 0.5rem;
+        justify-content: space-between;
+
     }
 
     @include desktop {
@@ -22,27 +26,12 @@
     &__name{
         color: $primaryLight;
         text-decoration: none;
+        list-style: none;
+    }
 
         &:hover {
             color: $secondaryDark;
         }
-
-        @include tablet {
-            display: none;
-        }
-
-        &--tablet {
-            display: none;
-            @include tablet {
-                display: contents;
-                color: $primaryLight;
-            }
-
-            &:hover{
-                color: $secondaryDark;
-            }
-        }
-    }
 
     &__list {
         display:flex;
@@ -74,6 +63,19 @@
             .nav__icon:hover{
                 animation: bounce 1s linear infinite;
             }
+        }
+    }
+
+    &__button{
+        background: none;
+        text-decoration: none;
+        border: none;
+        font-size: 0.9rem;
+        padding:0;
+        cursor: pointer;
+
+        @include desktop{
+            font-size: 1.2rem;
         }
     }
 

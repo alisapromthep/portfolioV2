@@ -8,6 +8,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import LoaderPage from './pages/LoaderPage/LoaderPage';
 import Modal from 'react-modal';
 import Connect from './components/Connect/Connect';
+import Casestudy from './components/Casestudy/Casestudy';
 
 function App() {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -50,7 +51,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage aboutRef={aboutRef} projectRef={projectRef} openModal={openModal}/>}/>
         <Route path='/projects' element={<CaseStudyPage/>}>
-          <Route path='/projects/:projectName' element='project'/>
+          <Route path='/projects/:projectName' element={<Casestudy/>}/>
         </Route>
       </Routes>
       <Footer/>

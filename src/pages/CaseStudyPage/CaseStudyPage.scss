@@ -1,0 +1,31 @@
+.casestudy {
+    &__navlink{
+        text-decoration: none;
+        padding-left: 1rem;
+    }
+
+    &__link {
+        margin:0.5rem;
+    }
+
+    &__project-container{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    &__img-container{
+        display: block;
+        width: 24rem;
+        border: 1px solid gold;
+    }
+    
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        border: 1px solid red;
+    }
+}

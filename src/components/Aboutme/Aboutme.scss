@@ -2,6 +2,7 @@
 @use '../../styles/partials/mixins' as *;
 
 .aboutme {
+    @include top-margin;
     background-color: $primaryDark;
     position: relative;
     display: flex;

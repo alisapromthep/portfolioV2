@@ -4,7 +4,7 @@
 
 .hero {
     @include mobile-padding;
-    
+    background-color: $primary;
 
     @include tablet {
         @include tablet-padding;
@@ -23,6 +23,8 @@
     }
 
     &__container {
+
+        @include top-margin;
         
         @include large-desktop {
             display: flex;
