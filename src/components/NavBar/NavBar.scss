@@ -4,7 +4,6 @@
 
 
 .nav {
-    background-color: $secondaryDark;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,12 +18,9 @@
 
     }
 
-    @include desktop {
-        @include desktop-padding;
-    }
 
     &__name{
-        color: $primaryLight;
+        color: $primaryDark;
         text-decoration: none;
         list-style: none;
     }
@@ -46,7 +42,7 @@
 
     &__link {
         text-decoration: none;
-        color:$primaryLight;
+        color:$primaryDark;
 
         &-item{
             list-style: none;

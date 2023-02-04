@@ -4,7 +4,6 @@
 
 .hero {
     @include mobile-padding;
-    background-color: $primary;
 
     @include tablet {
         @include tablet-padding;
@@ -73,12 +72,9 @@
 
         &--color{
             //color: #E4E6F5;
-            color:#344E8C;
+            //color:#344E8C;
             //color:#D5E1F6;
-            color:$secondaryDark;
-            background: $primary;
-            -webkit-background-clip: text;
-            -webkit-text-stroke: 4px transparent;
+            color:$primary;
             
         }
     }
@@ -129,10 +125,12 @@
     }
 
     &__arrow-down{
-        color: $primaryLight;
+        display:flex;
+        color: $primaryDark;
         font-size: 1rem;
         margin-top: 2rem;
         animation: arrow-down-bounce 1s infinite linear;
+        justify-self: center;
     }
 
 }
