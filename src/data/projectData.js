@@ -2,6 +2,7 @@ import virtualWanderHome from '../assets/projects/virtualWanderHome.png';
 import allergyTrackingHome from '../assets/projects/reaction-home.png';
 import shutterstockHome from '../assets/projects/shutterstock-homepage.png';
 import whosthatpokemonHome from '../assets/projects/whosthatpokemonHome.png';
+import catpropcafeHome from '../assets/projects/cat-prop-cafe-homepage.png';
 import cssIcon from '../assets/icons/css-3.svg';
 import expressIcon from '../assets/icons/express.svg';
 import gitIcon from '../assets/icons/git-icon.svg';
@@ -40,6 +41,26 @@ export const projectData = [
     },
     {
         "id": 2,
+        "name": "Cat-Prop-Cafe",
+        "img": catpropcafeHome,
+        "description": "A gamify, and visual application to learn and practice using React Props.",
+        "techIcon": [jsIcon, reactIcon, sassIcon, cssIcon],
+        "techstack": ["Javascript"," React" ,"SASS ", "CSS" ],
+        "tools": "Utilized React Hooks, useContext, custom hooks to create the game logic and centralize game functions and information.",
+        "links": [
+            {
+                "name":"DEMO",
+                "url": "https://cat-prop-cafe.netlify.app/"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/alisapromthep/cat-prop-cafe"
+            },
+
+        ]
+    },
+    {
+        "id": 3,
         "name": "Shutterstock",
         "img": shutterstockHome,
         "description": "A recreation of Shutterstock homepage with additional features section, and a new feature page, as a proof of concept. The project was done in collbaration between Web Developers and UX Designers.",
@@ -59,7 +80,7 @@ export const projectData = [
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Virtual Wanderer",
         "img": virtualWanderHome,
         "description": "24 hours pair-programming: A full stack React web application that takes you on a leisure journey through different cities. We built a RESTApi, containing pre-selected youtube videos for the applications. ",
@@ -78,7 +99,7 @@ export const projectData = [
         ]
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Who's that Pokemon?",
         "img": whosthatpokemonHome,
         "description": "24 hours hackathon using the Pokemon API and Document Object Model(DOM) methodd to create a pokemon identification game.",
