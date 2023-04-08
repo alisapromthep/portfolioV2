@@ -49,7 +49,7 @@ export const projectData = [
         "tools": "Utilized React Hooks, useContext, custom hooks to create the game logic and centralize game functions and information.",
         "links": [
             {
-                "name":"DEMO",
+                "name":"visit site",
                 "url": "https://cat-prop-cafe.netlify.app/"
             },
             {
