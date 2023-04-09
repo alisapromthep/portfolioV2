@@ -60,7 +60,10 @@
         @include tablet {
             display: flex;
             justify-content: center;
+            align-items: center;
             margin: 0 1rem;
+            //border: 2px solid red;
+            height: 26rem;
         }
     }
     
@@ -71,9 +74,10 @@
         @include tablet{
             @include border-radius;
             display: block;
-            width: 25rem;
+            width: 38rem;
             opacity: 0.6;
-            object-fit: contain;
+            //object-fit: contain;
+            padding: 2rem;
             transition: opacity 0.5s ease-in-out;
         }
 
@@ -91,6 +95,7 @@
         padding: 2rem;
         font-size: 0.9rem;
         transition: all 0.3s ease-in-out;
+        //border: 2px solid violet;
 
         @include tablet {
             width: 20rem;

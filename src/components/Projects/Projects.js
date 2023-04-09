@@ -15,12 +15,7 @@ const Projects = ({index,name,img,description,links,techIcon,tech}) => {
     const windowWidth = window.innerWidth;
     return (
         <article ref={project} className={`project reveal ${projectInView ? 'reveal--active':''}`}>
-            <div className={`project__container ${index%2 === 0 ? 'project__container--invert':''}`}>
-                <div className='project__img-container'>
-                    <img 
-                    className='project__img'
-                    src={img}/>
-                </div>
+            <div className={`project__container`}>
                     <div className='project__label-box'>
                         <div className='project__info-box'>
                             <div className='project__title-box'>
@@ -36,7 +31,6 @@ const Projects = ({index,name,img,description,links,techIcon,tech}) => {
                                 )
                             })}
                         </div>
-                            
                         </div>
                 <div className='project__link-box'>
                 {links.map((link,index)=>{
@@ -46,6 +40,11 @@ const Projects = ({index,name,img,description,links,techIcon,tech}) => {
                     )
                 })}
                 </div>
+                </div>
+                <div className='project__img-container'>
+                    <img 
+                    className='project__img'
+                    src={img}/>
                 </div>
             </div>
         </article>
