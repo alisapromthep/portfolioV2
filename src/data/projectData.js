@@ -43,7 +43,7 @@ export const projectData = [
         "id": 2,
         "name": "Cat-Prop-Cafe",
         "img": catpropcafeHome,
-        "description": "A gamify, and visual application to learn and practice using React Props.",
+        "description": "A little game for new web developers learning how to use React Props. The React components are visualized as a cafe with cats, and you are tasked to move things around by passing props.",
         "techIcon": [jsIcon, reactIcon, sassIcon, cssIcon],
         "techstack": ["Javascript"," React" ,"SASS ", "CSS" ],
         "tools": "Utilized React Hooks, useContext, custom hooks to create the game logic and centralize game functions and information.",
