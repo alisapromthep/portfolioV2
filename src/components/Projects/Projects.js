@@ -1,9 +1,5 @@
 import './Projects.scss'
 import { useInView } from 'react-intersection-observer';
-import {FaArrowUp} from 'react-icons/fa';
-
-
-import React from 'react';
 
 const Projects = ({index,name,img,description,links,techIcon,tech}) => {
 
@@ -15,7 +11,7 @@ const Projects = ({index,name,img,description,links,techIcon,tech}) => {
     const windowWidth = window.innerWidth;
     return (
         <article ref={project} className={`project reveal ${projectInView ? 'reveal--active':''}`}>
-            <div className={`project__container`}>
+            <div className='project__container'>
                     <div className='project__label-box'>
                         <div className='project__info-box'>
                             <div className='project__title-box'>

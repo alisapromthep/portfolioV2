@@ -44,10 +44,10 @@
 
 @mixin button {
     background-color: transparent;
-    border: 2px solid $primaryDark;
+    border: 2px solid $primary;
     border-radius: 5px;
     padding: 0.5rem;
-    color: $primaryDark;
+    color: $primary;
     margin-top: 1rem;
     cursor: pointer;
     transition: 0.25s;
@@ -67,7 +67,7 @@
 
 @mixin react-icon {
     width: 1rem;
-    color: $primaryDark;
+    color: $primary;
     cursor: pointer;
     @include tablet{
         width: 1.5rem;

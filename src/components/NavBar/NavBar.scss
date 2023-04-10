@@ -7,22 +7,26 @@
     display: flex;
     align-items: center;
     position: fixed;
+    justify-content: space-between;
     z-index: 1;
     width: 100%;
     top: 0;
     height: 4rem;
     background: linear-gradient(180deg, rgba(238,228,225,1) 60%, rgba(238,228,225,0) 80%);
+    @include mobile-padding;
 
 
     @include tablet {
-        padding: 0 0.5rem;
-        justify-content: space-between;
+        @include tablet-padding;
+    }
 
+    @include desktop{
+        @include desktop-padding;
     }
 
 
     &__name{
-        color: $primaryDark;
+        color: $primary;
         text-decoration: none;
         list-style: none;
     }
@@ -44,7 +48,8 @@
 
     &__link {
         text-decoration: none;
-        color:$primaryDark;
+        color:$primary;
+        font-weight: 600;
 
         &-item{
             list-style: none;

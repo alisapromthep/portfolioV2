@@ -7,7 +7,7 @@ const Hero = ({openModal}) => {
     return (
         <div className='hero__container'>
             <section className='hero'>
-                <div>
+                <div className='hero__img-box'>
                     <Apwork className='hero__img'/>
                 </div>
                 <div className='hero__textbox'>

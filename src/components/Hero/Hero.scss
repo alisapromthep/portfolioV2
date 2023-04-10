@@ -71,9 +71,6 @@
         }
 
         &--color{
-            //color: #E4E6F5;
-            //color:#344E8C;
-            //color:#D5E1F6;
             color:$primary;
             
         }
@@ -126,7 +123,7 @@
 
     &__arrow-down{
         display:flex;
-        color: $primaryDark;
+        color: $primary;
         font-size: 1rem;
         margin-top: 2rem;
         animation: arrow-down-bounce 1s infinite linear;
