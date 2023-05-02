@@ -35,27 +35,30 @@
         &-container {
             @include border-radius;
             width: 12.5rem;
-            height: 12.5rem;
+            height: 100%;
             overflow: hidden;
             position: relative;
             background-color: $primary;
-            filter: opacity(0.85);
+            //filter: opacity(0.85);
             z-index: 1;
             
             @include tablet{
                 width: 15rem;
-                height: 15rem;
+                //height: 15rem;
             }
 
             @include desktop {
                 width: 20rem;
-                height: 20rem;
+                //height: 20rem;
             }
         }
 
     }
 
     &__textbox {
+        background-color: $backgroundColor;
+        @include border-radius;
+        padding: 0 2rem;
         @include tablet {
             width: 50%;
         }

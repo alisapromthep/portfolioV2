@@ -4,7 +4,7 @@
 .connect {
     @include mobile-padding;
     @include flex-column;
-    background-color: $primaryDark;
+    background-color: $backgroundColor;
     @include border-radius;
     justify-content: space-between;
     align-items: center;

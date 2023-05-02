@@ -9,7 +9,11 @@
 body {
     margin: 0;
     overflow-x: hidden;
-    background-color: $primaryLight;
+    //background-color: $backgroundColor;
+    background-color: #f2ebe9;
+opacity: 1;
+background-size: 13px 13px;
+background-image: repeating-linear-gradient(45deg, #b1c1e3 0, #b1c1e3 1.3px, #f2ebe9 0, #f2ebe9 50%);
 }
 
 .reveal{
