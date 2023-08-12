@@ -4,6 +4,9 @@
 
 .hero {
     @include mobile-padding;
+    height: 100vh;
+    border: 2px solid red;
+    scroll-snap-align: center;
 
     @include tablet {
         @include tablet-padding;
@@ -49,6 +52,7 @@
         margin: 0;
         line-height: 3.5rem;
 
+
         @include tablet {
             font-size: 6rem;
             margin-top: 0;
@@ -72,7 +76,8 @@
         }
 
         &--color{
-            color:$primary;
+            color:$primaryLight;
+            //color: $secondary;
             
         }
     }
