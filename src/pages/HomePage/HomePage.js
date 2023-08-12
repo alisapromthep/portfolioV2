@@ -9,12 +9,27 @@ import React from "react";
 
 function HomePage({aboutRef, projectRef, openModal}) {
 
+    const components = [
+   { component: <Hero openModal={openModal}/>,
+    class: 'section__top'},
+    {component: <Aboutme aboutRef={aboutRef}/>,
+    class: 'section__middle'},
+    {component: <Projectsection projectRef={projectRef}/>,
+class: 'section__bottom'}
+]
+
     
     return (
         <main className='homepage'>
-            <Hero openModal={openModal}/>
-            <Aboutme aboutRef={aboutRef}/>
-            <Projectsection projectRef={projectRef}/>
+                {components.map((component,i)=>{
+                    return (
+                        <section className={`homepage__section ${component.class}`}
+                        key={i}
+                        >
+                            {component.component}
+                        </section>
+                    )
+                })}
         </main>
     )
 }

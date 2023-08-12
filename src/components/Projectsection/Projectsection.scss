@@ -3,11 +3,6 @@
 
 .projects {
     padding: 0 2rem 2rem 2rem;
-    width: 100%;
-    height: 100vh;
-    scroll-snap-align: center;
-
-
     @include tablet{
         @include flex-column;
         @include tablet-padding;

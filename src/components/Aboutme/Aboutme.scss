@@ -2,10 +2,6 @@
 @use '../../styles/partials/mixins' as *;
 
 .aboutme {
-    height: 100vh;
-    border: 2px solid red;
-    scroll-snap-align: center;
-
     @include top-margin;
     position: relative;
     display: flex;

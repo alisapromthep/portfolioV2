@@ -4,9 +4,6 @@
 
 .hero {
     @include mobile-padding;
-    height: 100vh;
-    border: 2px solid red;
-    scroll-snap-align: center;
 
     @include tablet {
         @include tablet-padding;
@@ -25,8 +22,6 @@
     }
 
     &__container {
-        background: linear-gradient(180deg, rgba(238,228,225,1) 70%, rgba(238,228,225,0) 80%);
-
         @include top-margin;
         
         @include large-desktop {
