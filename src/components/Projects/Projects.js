@@ -1,16 +1,10 @@
 import './Projects.scss'
-import { useInView } from 'react-intersection-observer';
 
 const Projects = ({index,name,img,description,links,techIcon,tech}) => {
 
-    const {ref:project, inView:projectInView} = useInView({
-        threshold: 0.5,
-        triggerOnce: true,
-    });
-
     const windowWidth = window.innerWidth;
     return (
-        <article ref={project} className={`project reveal ${projectInView ? 'reveal--active':''}`}>
+        <article className='project'>
             <div className='project__container'>
                     <div className='project__label-box'>
                         <div className='project__info-box'>

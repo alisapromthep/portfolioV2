@@ -48,10 +48,13 @@
     }
 
     &__box {
-        position: relative;
-        @include flex-column;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        // align-items: center;
+        display: grid;
+        grid-template-columns: 20rem 20rem;
+
 
         @include tablet{
             position: static;

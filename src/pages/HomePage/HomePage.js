@@ -2,34 +2,43 @@ import './HomePage.scss';
 import Hero from '../../components/Hero/Hero';
 import Aboutme from '../../components/Aboutme/Aboutme';
 import Projectsection from '../../components/Projectsection/Projectsection';
-
+import {ReactComponent as Apwork} from '../../assets/images/ap-work-credit.svg';
+import {ReactComponent as ApProject} from '../../assets/images/ap-project-credit.svg';
+import {useRef} from 'react';
 import React from "react";
 
 
 
 function HomePage({aboutRef, projectRef, openModal}) {
 
-    const components = [
-   { component: <Hero openModal={openModal}/>,
-    class: 'section__top'},
-    {component: <Aboutme aboutRef={aboutRef}/>,
-    class: 'section__middle'},
-    {component: <Projectsection projectRef={projectRef}/>,
-class: 'section__bottom'}
-]
+    const heroRef = useRef();
 
-    
     return (
         <main className='homepage'>
-                {components.map((component,i)=>{
-                    return (
-                        <section className={`homepage__section ${component.class}`}
-                        key={i}
-                        >
-                            {component.component}
-                        </section>
-                    )
-                })}
+                <section ref={heroRef}
+                className='section section__top'
+                >
+                    <div className='hero__img-box'>
+                        <Apwork className='hero__img'/>
+                    </div>
+                        <Hero openModal={openModal}/>
+                </section>
+                <section
+                className='section section__middle'
+                >
+                    <div className='hero__img-box'>
+                        <Apwork className='hero__img'/>
+                    </div>
+                        <Aboutme />
+                </section>
+                <section
+                className='section section__bottom'
+                >
+                    <div className='hero__img-box'>
+                        <ApProject className='hero__img'/>
+                    </div>
+                        <Projectsection/>
+                </section>
         </main>
     )
 }

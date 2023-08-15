@@ -3,10 +3,10 @@
 
 .aboutme {
     @include top-margin;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     @include mobile-padding;
 
     @include tablet {
