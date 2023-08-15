@@ -3,7 +3,6 @@
 @use '../../styles/partials/animation' as *;
 
 .project {
-    margin: 1rem;
     position: relative;
     display: flex;
     justify-content: center;
@@ -11,23 +10,21 @@
     &__container {
         border-radius: 10px;
         background-color: $backgroundColor;
+        //height: 24rem;
+        padding: 2rem;
 
-        &--invert {
-            flex-direction: row-reverse;
-        }
+        // @include tablet {
+        //     width: 100%;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        // }
 
-        @include tablet {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        @include desktop {
-            justify-content: space-between;
-            height: 30rem;
-            max-width: 80rem;
-        }
+        // @include desktop {
+        //     justify-content: space-between;
+        //     height: 30rem;
+        //     max-width: 80rem;
+        // }
 
     }
 
@@ -56,14 +53,14 @@
     &__img-container {
         @include border-radius;
 
-        @include tablet {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 1rem;
-            //border: 2px solid red;
-            height: 26rem;
-        }
+        // @include tablet {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     margin: 0 1rem;
+        //     //border: 2px solid red;
+        //     height: 26rem;
+        // }
     }
     
 
@@ -96,10 +93,10 @@
         transition: all 0.3s ease-in-out;
         //border: 2px solid violet;
 
-        @include tablet {
-            width: 20rem;
-            margin: 1rem;
-        }
+        // @include tablet {
+        //     width: 20rem;
+        //     margin: 1rem;
+        // }
 
         // @include desktop {
         //     height: 30rem;

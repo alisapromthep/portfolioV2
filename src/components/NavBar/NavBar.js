@@ -1,20 +1,23 @@
 import './NavBar.scss';
 import {Link} from 'react-router-dom';
 import {FaLinkedin, FaGithubSquare, FaTelegramPlane} from 'react-icons/fa';
+import { scrollTo } from '../../utility';
 
-const NavBar = ({handleScrollToAbout, handleScrollToProject, openModal}) => {
+const NavBar = ({heroRef, aboutMeRef, projectsRef,openModal}) => {
     return (
         <div className='nav'>
-            <Link className='nav__name' to='/'>A.P.</Link>
+            <button className='nav__link nav__button'
+                    onClick={scrollTo(heroRef)}
+                    >Alisa</button>
             <ul className='nav__list'>
                 <li className='nav__link-item'>
                     <button className='nav__link nav__button'
-                    onClick={handleScrollToAbout}
+                    onClick={scrollTo(aboutMeRef)}
                     >About</button>
                     </li>
                 <li className='nav__link-item'>
                     <button className='nav__link nav__button'
-                    onClick={handleScrollToProject}>Projects</button>
+                    onClick={scrollTo(projectsRef)}>Projects</button>
                     </li>
                 <li className='nav__link-item'>
                     <a

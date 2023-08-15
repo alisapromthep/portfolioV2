@@ -9,9 +9,8 @@ import React from "react";
 
 
 
-function HomePage({aboutRef, projectRef, openModal}) {
 
-    const heroRef = useRef();
+function HomePage({heroRef, aboutMeRef, projectsRef, openModal}) {
 
     return (
         <main className='homepage'>
@@ -24,6 +23,7 @@ function HomePage({aboutRef, projectRef, openModal}) {
                         <Hero openModal={openModal}/>
                 </section>
                 <section
+                ref={aboutMeRef}
                 className='section section__middle'
                 >
                     <div className='hero__img-box'>
@@ -32,12 +32,13 @@ function HomePage({aboutRef, projectRef, openModal}) {
                         <Aboutme />
                 </section>
                 <section
+                ref={projectsRef}
                 className='section section__bottom'
                 >
-                    <div className='hero__img-box'>
+                    {/* <div className='hero__img-box'>
                         <ApProject className='hero__img'/>
-                    </div>
-                        <Projectsection/>
+                    </div> */}
+                        <Projectsection />
                 </section>
         </main>
     )

@@ -1,7 +1,7 @@
 import './Aboutme.scss';
 import React from 'react';
 
-const Aboutme = ({aboutRef}) => {
+const Aboutme = () => {
 
     return (
             <section className='aboutme'>

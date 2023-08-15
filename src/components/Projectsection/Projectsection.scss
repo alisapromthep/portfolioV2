@@ -53,7 +53,9 @@
         // justify-content: center;
         // align-items: center;
         display: grid;
-        grid-template-columns: 20rem 20rem;
+        grid-gap:1rem;
+        grid-auto-columns: auto;
+        grid-template-columns: 25rem 25rem 25rem;
 
 
         @include tablet{

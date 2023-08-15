@@ -11,18 +11,12 @@ import Connect from './components/Connect/Connect';
 import Casestudy from './components/Casestudy/Casestudy';
 
 function App() {
+
+  const heroRef = useRef();
+  const aboutMeRef = useRef();
+  const projectsRef = useRef();
+
   const [modalIsOpen, setIsOpen] = useState(false);
-
-  const aboutRef = React.createRef();
-  const projectRef = useRef(null);
-
-  const handleScrollToAbout =()=>{
-    window.scrollTo({top: aboutRef.current.offsetTop, behavior:'smooth'});
-    }
-
-    const handleScrollToProject =()=>{
-    window.scrollTo({top: projectRef.current.offsetTop, behavior:'smooth'});
-    }
 
     const openModal=()=>{
         setIsOpen(true);
@@ -34,8 +28,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <NavBar handleScrollToAbout={handleScrollToAbout}
-      handleScrollToProject={handleScrollToProject}
+      <NavBar heroRef={heroRef} aboutMeRef={aboutMeRef} projectsRef={projectsRef}
       openModal={openModal}
       />
       <Modal
@@ -49,7 +42,7 @@ function App() {
         </div>
       </Modal>
       <Routes>
-        <Route path='/' element={<HomePage aboutRef={aboutRef} projectRef={projectRef} openModal={openModal}/>}/>
+        <Route path='/' element={<HomePage heroRef={heroRef} aboutMeRef={aboutMeRef} projectsRef={projectsRef} openModal={openModal}/>}/>
         <Route path='/projects' element={<CaseStudyPage/>}>
           <Route path='/projects/:projectName' element={<Casestudy/>}/>
         </Route>

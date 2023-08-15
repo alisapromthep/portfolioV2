@@ -56,12 +56,14 @@
     }
 
     &__textbox {
-        background-color: $backgroundColor;
+        //background-color: $backgroundColor;
+        font-size: 2rem;
         @include border-radius;
         padding: 0 2rem;
-        @include tablet {
-            width: 50%;
-        }
+    }
+
+    &__description{
+        font-size: 1rem;
     }
 
     

@@ -8,11 +8,12 @@ import {projectData} from '../../data/projectData';
 const ProjectSection = () => {
     
     return (
-        <section className='projects'>
+        <section className='projects'
+        >
+        <div className='projects__box'>
             <div className='projects__header'>
                 <h2 className='projects__headline'>Projects</h2>
             </div>
-        <div className='projects__box'>
             {projectData.map((project,index)=>{
                 return (
                     <Project key={index} 
