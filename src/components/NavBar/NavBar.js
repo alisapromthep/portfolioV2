@@ -1,5 +1,4 @@
 import './NavBar.scss';
-import {Link} from 'react-router-dom';
 import {FaLinkedin, FaGithubSquare, FaTelegramPlane} from 'react-icons/fa';
 import { scrollTo } from '../../utility';
 
@@ -7,17 +6,17 @@ const NavBar = ({heroRef, aboutMeRef, projectsRef,openModal}) => {
     return (
         <div className='nav'>
             <button className='nav__link nav__button'
-                    onClick={scrollTo(heroRef)}
+                    onClick={()=>scrollTo(heroRef)}
                     >Alisa</button>
             <ul className='nav__list'>
                 <li className='nav__link-item'>
                     <button className='nav__link nav__button'
-                    onClick={scrollTo(aboutMeRef)}
+                    onClick={()=>scrollTo(aboutMeRef)}
                     >About</button>
                     </li>
                 <li className='nav__link-item'>
                     <button className='nav__link nav__button'
-                    onClick={scrollTo(projectsRef)}>Projects</button>
+                    onClick={()=>scrollTo(projectsRef)}>Projects</button>
                     </li>
                 <li className='nav__link-item'>
                     <a
