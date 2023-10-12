@@ -112,7 +112,7 @@ export const projectData = [
         "id": 5,
         "name": "Who's that Pokemon?",
         "img": whosthatpokemonHome,
-        "description": "24 hours hackathon using the Pokemon API and Document Object Model(DOM) methodd to create a pokemon identification game.",
+        "description": "24 hours hackathon using the Pokemon API and Document Object Model(DOM) method to create a pokemon identification game.",
         "techIcon": [jsIcon,sassIcon,cssIcon],
         "techstack": ["Javascript"  ,"SASS", "CSS"],
         "links": [

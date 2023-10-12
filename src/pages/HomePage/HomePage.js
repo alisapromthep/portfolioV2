@@ -4,13 +4,19 @@ import Aboutme from '../../components/Aboutme/Aboutme';
 import Projectsection from '../../components/Projectsection/Projectsection';
 import {ReactComponent as Apwork} from '../../assets/images/ap-work-credit.svg';
 import {ReactComponent as ApProject} from '../../assets/images/ap-project-credit.svg';
-import {useRef} from 'react';
-import React from "react";
-
-
-
+import React, {useRef} from "react";
+import {motion, useScroll, useTransform} from 'framer-motion';
 
 function HomePage({heroRef, aboutMeRef, projectsRef, openModal}) {
+
+    const ref = useRef(null);
+
+    const {scrollYProgress} = useScroll({
+        target:heroRef,
+        offset:['start start', 'end start']
+    });
+
+    const textY = useTransform(scrollYProgress, [0,1], ["0","200%"]);
 
     return (
         <main className='homepage'>
@@ -20,7 +26,9 @@ function HomePage({heroRef, aboutMeRef, projectsRef, openModal}) {
                     <div className='hero__img-box'>
                         <Apwork className='hero__img'/>
                     </div>
-                        <Hero openModal={openModal}/>
+                    <motion.div style={{y:textY}}>
+                        <Hero openModal={openModal}/> 
+                    </motion.div>
                 </section>
                 <section
                 ref={aboutMeRef}
