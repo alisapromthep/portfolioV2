@@ -20,6 +20,19 @@
         @include desktop-padding;
     }
 
+    &__title{
+        @include pink-neon-text;
+
+        &-box{
+            @include white-neon-border;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            width: 40rem;
+            height: 10rem;
+            padding: 2rem;
+        }
+    }
+
     &__img{
         width: 12.5rem;
         object-fit: cover;

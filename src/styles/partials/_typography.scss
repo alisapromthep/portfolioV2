@@ -37,6 +37,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'vibur';
+    src: url('../../assets/fonts/Vibur.woff') format('woff'),
+    url('../../assets/fonts/alternative-fonts/Vibur.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     color: $primary;
     font-family: 'nunito', sans-serif;

@@ -61,8 +61,29 @@ export const projectData = [
 
         ]
     },
+    ,
     {
         "id": 3,
+        "name": "Solar Sync",
+        "img": '',
+        "description": "EV Charger finder, ",
+        "techIcon": [sassIcon, cssIcon],
+        "techstack": ["Typescript","NextJs" ,"SASS ", "CSS" ],
+        "tools": "Utilized React Hooks, useContext, custom hooks to create the game logic and centralize game functions and information.",
+        "links": [
+            {
+                "name":"visit site",
+                "url": "https://solar-sync.vercel.app/"
+            },
+            {
+                "name": "Presentation",
+                "url": "https://devpost.com/software/solar-sync"
+            },
+
+        ]
+    },
+    {
+        "id": 4,
         "name": "Shutterstock",
         "img": shutterstockHome,
         "description": "A recreation of Shutterstock homepage with additional features section, and a new feature page, as a proof of concept. The project was done in collbaration between Web Developers and UX Designers.",
@@ -86,7 +107,7 @@ export const projectData = [
         }
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Virtual Wanderer",
         "img": virtualWanderHome,
         "description": "24 hours pair-programming: A full stack React web application that takes you on a leisure journey through different cities. We built a RESTApi, containing pre-selected youtube videos for the applications. ",
@@ -109,7 +130,7 @@ export const projectData = [
         }
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Who's that Pokemon?",
         "img": whosthatpokemonHome,
         "description": "24 hours hackathon using the Pokemon API and Document Object Model(DOM) method to create a pokemon identification game.",

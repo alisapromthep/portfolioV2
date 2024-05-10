@@ -2,24 +2,32 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/animation' as *;
 
+.neon-square {
+    background-color: $backgroundColor;
+    border: 2.5px solid #fff;
+    border-bottom: 1px solid #fff;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include white-neon-border;
+}
 
 .nav {
     z-index: 1;
+    position: fixed;
+    top: 15%;
+    right: 15%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $backgroundColor;
+    flex-direction: column;
     @include mobile-padding;
-
+    width: 5rem;
+    height: 100%;
 
     @include tablet {
         padding: 1rem 3rem;
     }
-
-    @include desktop{
-        //padding: 3rem 0;
-    }
-
 
     &__name{
         color: $primary;
@@ -33,6 +41,7 @@
 
     &__list {
         display:flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: inherit;
         padding-left: 0.5rem;
@@ -40,6 +49,7 @@
 
     &__icon{
         @include react-icon;
+        width: 3rem;
     }
 
     &__link {
@@ -52,21 +62,35 @@
             text-decoration: none;
             margin-right: 0.5rem;
             cursor: pointer;
+            padding: 1rem 0;
 
             @include tablet {
                 margin-right: 1rem;
             }
+        }
+    }
 
-            &:hover, 
-            .nav__link:hover,
-            .nav__icon:hover{
-                animation: bounce 1s linear infinite;
-            }
+    &__link-item--icon{
+        list-style: none;
+        text-decoration: none;
+        margin-right: 0.5rem;
+        cursor: pointer;
+        transition: 0.5s linear;
+        padding: 0.25rem 0.5rem 0.1rem 0.5rem;
+
+        @include tablet {
+            margin-right: 1rem;
+        }
+    
+        &:active{
+            box-shadow:none;
+            border: 1px solid grey;
+    
         }
     }
 
     &__button{
-        background: none;
+        background: transparent;
         text-decoration: none;
         border: none;
         font-size: 0.9rem;

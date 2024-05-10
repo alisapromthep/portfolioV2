@@ -5,7 +5,6 @@ import HomePage from './pages/HomePage/HomePage';
 import CaseStudyPage from './pages/CaseStudyPage/CaseStudyPage';
 import React, {useRef, useState} from "react";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import LoaderPage from './pages/LoaderPage/LoaderPage';
 import Modal from 'react-modal';
 import Connect from './components/Connect/Connect';
 import Casestudy from './components/Casestudy/Casestudy';
@@ -42,10 +41,10 @@ function App() {
         </div>
       </Modal>
       <Routes>
-        <Route path='/' element={<HomePage heroRef={heroRef} aboutMeRef={aboutMeRef} projectsRef={projectsRef} openModal={openModal}/>}/>
-        <Route path='/projects' element={<CaseStudyPage/>}>
-          <Route path='/projects/:projectName' element={<Casestudy/>}/>
-        </Route>
+          <Route path='/' element={<HomePage heroRef={heroRef} aboutMeRef={aboutMeRef} projectsRef={projectsRef} openModal={openModal}/>}/>
+          <Route path='/projects' element={<CaseStudyPage/>}>
+            <Route path='/projects/:projectName' element={<Casestudy/>}/>
+          </Route>
       </Routes>
       <Footer/>
     </BrowserRouter>

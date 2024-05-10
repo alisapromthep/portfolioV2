@@ -8,40 +8,24 @@
     width: 100%;
 }
 
+.background__farthest{
+    background-image: url(../../assets/background/neon-bg1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
 .homepage {
-    margin: 0;
-    position: relative;
-    overflow-y: auto;
-    overscroll-behavior-y: contain;
-    scroll-snap-type: y mandatory;
-    height: 100vh;
-    width: 100%;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    &::-webkit-scrollbar{
-        display: none;
-    }
+    // -ms-overflow-style: none;
+    // scrollbar-width: none;
+    // &::-webkit-scrollbar{
+    //     display: none;
+    // }
 }
 
 .section{
-    height: 100vh;
-    scroll-snap-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    &__top{
-        background-color: $backgroundColor;
-
-    }
-
-    &__middle{
-        background-color: $secondary;
-
-    }
-
-    &__bottom{
-        background-color: $secondaryLight;
-        //height: fit-content;
-    }
 }

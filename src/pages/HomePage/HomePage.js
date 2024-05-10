@@ -2,40 +2,30 @@ import './HomePage.scss';
 import Hero from '../../components/Hero/Hero';
 import Aboutme from '../../components/Aboutme/Aboutme';
 import Projectsection from '../../components/Projectsection/Projectsection';
+import Connect from '../../components/Connect/Connect';
 import {ReactComponent as Apwork} from '../../assets/images/ap-work-credit.svg';
 import {ReactComponent as ApProject} from '../../assets/images/ap-project-credit.svg';
 import React, {useRef} from "react";
 import {motion, useScroll, useTransform} from 'framer-motion';
 
+
 function HomePage({heroRef, aboutMeRef, projectsRef, openModal}) {
 
     const ref = useRef(null);
 
-    const {scrollYProgress} = useScroll({
-        target:heroRef,
-        offset:['start start', 'end start']
-    });
-
-    const textY = useTransform(scrollYProgress, [0,1], ["0","200%"]);
-
     return (
         <main className='homepage'>
+            <div className='background__farthest'>
                 <section ref={heroRef}
                 className='section section__top'
                 >
-                    <div className='hero__img-box'>
-                        <Apwork className='hero__img'/>
-                    </div>
-                    <motion.div style={{y:textY}}>
-                        <Hero openModal={openModal}/> 
-                    </motion.div>
+                    <Hero openModal={openModal}/> 
                 </section>
                 <section
                 ref={aboutMeRef}
                 className='section section__middle'
                 >
                     <div className='hero__img-box'>
-                        <Apwork className='hero__img'/>
                     </div>
                         <Aboutme />
                 </section>
@@ -43,11 +33,12 @@ function HomePage({heroRef, aboutMeRef, projectsRef, openModal}) {
                 ref={projectsRef}
                 className='section section__bottom'
                 >
-                    {/* <div className='hero__img-box'>
-                        <ApProject className='hero__img'/>
-                    </div> */}
-                        <Projectsection />
+                    <Projectsection />
                 </section>
+                <section>
+                    <Connect/>
+                </section>
+            </div>
         </main>
     )
 }
