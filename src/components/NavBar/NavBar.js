@@ -19,7 +19,7 @@ const NavBar = ({handleScrollToAbout, handleScrollToProject, openModal}) => {
                 <li className='nav__link-item'>
                     <a
                 className='nav__link'
-                href="https://docs.google.com/document/d/e/2PACX-1vSE8GB9wynWs1sdh-r0mueZmOwiHMzscNesOOJChC4kMtlIJkeT_kravPNAwASnqcSS1SLA8gimdiZ0/pub"
+                href="https://resume.creddle.io/resume/rzivp3fp2e"
                 target="_blank"
                 rel="noreferrer">
                     Resume
