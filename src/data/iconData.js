@@ -9,8 +9,33 @@ import mysqlIcon from '../assets/icons/mysql.svg';
 import nodeIcon from '../assets/icons/nodejs-icon.svg';
 import reactIcon from '../assets/icons/react.svg';
 import sassIcon from '../assets/icons/sass.svg';
+import firebaseIcon from '../assets/icons/firebase.svg';
+import nextIcon from '../assets/icons/nextjs-icon.svg';
+import pocketbaseIcon from '../assets/icons/pocket-base.svg';
+import tailwindIcon from '../assets/icons/tailwindcss-icon.svg';
+import typescriptIcon from '../assets/icons/typescript-icon.svg';
 
 export const iconData = [
+    {
+        "name": "typescript Icon",
+        "img": typescriptIcon
+    },
+    {
+        "name": "tailwindcss Icon",
+        "img": tailwindIcon
+    },
+    {
+        "name": "firebase Icon",
+        "img": firebaseIcon
+    },
+    {
+        "name": "nextjs Icon",
+        "img": nextIcon
+    },
+    {
+        "name": "pocketbase Icon",
+        "img": pocketbaseIcon
+    },
     {
         "name": "javascript Icon",
         "img": jsIcon
@@ -55,5 +80,4 @@ export const iconData = [
         "name": "material-ui Icon",
         "img": muiIcon
     }
-
 ]
