@@ -1,11 +1,6 @@
 import "./Landing.scss";
 import { ReactComponent as Apwork } from "../../assets/images/ap-work-credit.svg";
-import {
-  FaTelegramPlane,
-  FaArrowDown,
-  FaLinkedin,
-  FaGithubSquare,
-} from "react-icons/fa";
+import { FaTelegramPlane, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { aboutMeData } from "../../data/aboutMeData";
 

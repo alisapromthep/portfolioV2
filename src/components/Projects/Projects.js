@@ -16,7 +16,7 @@ const Projects = ({
     triggerOnce: true,
   });
 
-  const windowWidth = window.innerWidth;
+  //const windowWidth = window.innerWidth;
   return (
     <article
       ref={project}
