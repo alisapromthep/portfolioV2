@@ -57,9 +57,6 @@ function App() {
             />
           }
         />
-        <Route path="/projects" element={<CaseStudyPage />}>
-          <Route path="/projects/:projectName" element={<Casestudy />} />
-        </Route>
       </Routes>
       <Footer />
     </BrowserRouter>
