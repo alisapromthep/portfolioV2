@@ -1,0 +1,188 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/animation' as *;
+
+.landing {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include mobile-padding;
+    padding-top: 5rem;
+
+    @include tablet {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        @include tablet-padding;
+    }
+
+    @include desktop {
+        @include desktop-padding;
+    }
+
+    &__illustration {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        @include tablet {
+            margin-bottom: 0;
+            flex-shrink: 0;
+        }
+    }
+
+    &__img {
+        width: 16rem;
+        height: auto;
+
+        @include tablet {
+            width: 20rem;
+        }
+
+        @include desktop {
+            width: 26rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        @include tablet {
+            width: 55%;
+        }
+    }
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    &__greeting {
+        font-size: 1rem;
+        color: $textSecondary;
+        margin: 0;
+    }
+
+    &__name {
+        font-size: 3rem;
+        font-weight: 500;
+        color: $textPrimary;
+        margin: 0;
+        line-height: 1.1;
+
+        @include tablet {
+            font-size: 4rem;
+        }
+
+        @include desktop {
+            font-size: 5rem;
+        }
+    }
+
+    &__tagline {
+        font-size: 0.95rem;
+        color: $primary;
+        margin: 0.25rem 0 0;
+        font-style: italic;
+    }
+
+    &__bio {
+        color: $textSecondary;
+        line-height: 1.8;
+        font-size: 0.95rem;
+        margin: 0;
+    }
+
+    &__stats {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+
+    &__stat {
+        background-color: $backgroundCard;
+        border: 0.5px solid $accent1;
+        border-radius: 8px;
+        padding: 0.5rem 0.75rem;
+        text-align: center;
+        min-width: 4.5rem;
+
+        &-value {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: $primary;
+            display: block;
+        }
+
+        &-label {
+            font-size: 0.65rem;
+            color: $textSecondary;
+            display: block;
+        }
+    }
+
+    &__currently {
+        font-size: 0.8rem;
+        color: $textLight;
+        font-style: italic;
+        margin: 0;
+        padding-left: 0.75rem;
+        border-left: 2px solid $secondary;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__button {
+        font-size: 0.95rem;
+        width: fit-content;
+        background-color: $backgroundColor;
+        border: 2px solid $primary;
+        border-radius: 5px;
+        padding: 0.5rem;
+        color: $primary;
+        cursor: pointer;
+
+        &:hover .button__icon {
+            @include sending-animation;
+        }
+    }
+
+    &__arrow {
+        color: $secondary;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        animation: arrow-down-bounce 1s infinite linear;
+        align-self: flex-start;
+    }
+
+    &__social {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+&__social-link {
+    display: flex;
+    align-items: center;
+    color: $primary;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: $secondaryDark;
+    }
+}
+
+&__social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+}

@@ -1,45 +1,30 @@
-import './NavBar.scss';
-import {Link} from 'react-router-dom';
-import {FaLinkedin, FaGithubSquare, FaTelegramPlane} from 'react-icons/fa';
+import "./NavBar.scss";
 
-const NavBar = ({handleScrollToAbout, handleScrollToProject, openModal}) => {
-    return (
-        <div className='nav'>
-            <Link className='nav__name' to='/'>A.P.</Link>
-            <ul className='nav__list'>
-                <li className='nav__link-item'>
-                    <button className='nav__link nav__button'
-                    onClick={handleScrollToAbout}
-                    >About</button>
-                    </li>
-                <li className='nav__link-item'>
-                    <button className='nav__link nav__button'
-                    onClick={handleScrollToProject}>Projects</button>
-                    </li>
-                <li className='nav__link-item'>
-                    <a
-                className='nav__link'
-                href="https://docs.google.com/document/d/e/2PACX-1vSE8GB9wynWs1sdh-r0mueZmOwiHMzscNesOOJChC4kMtlIJkeT_kravPNAwASnqcSS1SLA8gimdiZ0/pub"
-                target="_blank"
-                rel="noreferrer">
-                    Resume
-                    </a>
-                </li>
-                <li className='nav__link-item'><button onClick={openModal}className='nav__button'><FaTelegramPlane className='nav__icon' size={'auto'}/></button></li>
-                <li className='nav__link-item'>
-                    <a href="https://www.linkedin.com/in/alisa-promthep/"
-                target="_blank"
-                rel="noreferrer"><FaLinkedin className='nav__icon' size={'auto'}/></a>
-                </li>
-                <li className='nav__link-item'><a 
-                href="https://github.com/alisapromthep"
-                target="_blank"
-                rel="noreferrer">
-                <FaGithubSquare size={'auto'} className='nav__icon'/>
-                </a></li>
-            </ul>
-        </div>
-    )
-}
+const NavBar = ({ handleScrollToAbout, handleScrollToProject, openModal }) => {
+  return (
+    <nav className="nav">
+      <span className="nav__name">A.P.</span>
+      <div className="nav__tabs">
+        <button
+          className="nav__tab nav__tab--active"
+          onClick={handleScrollToAbout}
+        >
+          About
+        </button>
+        <button className="nav__tab" onClick={handleScrollToProject}>
+          Projects
+        </button>
+        <a
+          className="nav__tab"
+          href="https://docs.google.com/document/d/e/2PACX-1vSE8GB9wynWs1sdh-r0mueZmOwiHMzscNesOOJChC4kMtlIJkeT_kravPNAwASnqcSS1SLA8gimdiZ0/pub"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Resume
+        </a>
+      </div>
+    </nav>
+  );
+};
 
-export default NavBar
+export default NavBar;
