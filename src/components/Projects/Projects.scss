@@ -10,7 +10,8 @@
 
     &__container {
         border-radius: 10px;
-        background-color: $backgroundColor;
+        background-color: $backgroundCard;
+        border: 0.5px solid $accent1;
 
         &--invert {
             flex-direction: row-reverse;
@@ -28,13 +29,12 @@
             height: 30rem;
             max-width: 80rem;
         }
-
     }
 
-    &__title-box{
+    &__title-box {
         display: flex;
         justify-content: space-between;
-
+        align-items: flex-start;
     }
 
     &__title {
@@ -42,7 +42,7 @@
         font-size: 2rem;
         margin: 0;
         margin-bottom: 0.5rem;
-        
+        color: $textPrimary;
 
         @include desktop {
             font-size: 2rem;
@@ -50,7 +50,10 @@
     }
 
     &__description {
-        @include desktop{
+        color: $textSecondary;
+        line-height: 1.7;
+
+        @include desktop {
             margin: 0;
         }
     }
@@ -63,21 +66,18 @@
             justify-content: center;
             align-items: center;
             margin: 0 1rem;
-            //border: 2px solid red;
             height: 26rem;
         }
     }
-    
 
     &__img {
         display: none;
 
-        @include tablet{
+        @include tablet {
             @include border-radius;
             display: block;
             width: 38rem;
             opacity: 0.6;
-            //object-fit: contain;
             padding: 2rem;
             transition: opacity 0.5s ease-in-out;
         }
@@ -85,7 +85,6 @@
         &:hover {
             opacity: 1;
         }
-
     }
 
     &__label-box {
@@ -96,7 +95,7 @@
         padding: 2rem;
         font-size: 0.9rem;
         transition: all 0.3s ease-in-out;
-        //border: 2px solid violet;
+        background-color: $backgroundCard;
 
         @include tablet {
             width: 20rem;
@@ -108,14 +107,36 @@
             justify-content: center;
         }
 
-        &:hover{
+        &:hover {
             animation: fade_in_bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
             bottom: 0px;
         }
-
     }
 
-    &__link{
+    &__badge {
+        display: inline-block;
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 20px;
+        margin-bottom: 0.5rem;
+        background-color: $accent2;
+        color: $textPrimary;
+        border: 0.5px solid darken($accent2, 15%);
+
+        &--green {
+            background-color: $secondary;
+            color: $secondaryDark;
+            border-color: $secondaryDark;
+        }
+
+        &--pink {
+            background-color: $accent1;
+            color: $textPrimary;
+            border-color: $accent3;
+        }
+    }
+
+    &__link {
         @include button;
         text-decoration: none;
         text-transform: capitalize;
@@ -128,17 +149,27 @@
             margin: 1rem 0.5rem 1rem 0;
         }
 
+        &--secondary {
+            @include button-secondary;
+            text-decoration: none;
+            text-transform: capitalize;
+            margin: 0.25rem;
+            font-size: 1rem;
+            font-weight: 800;
 
+            @include tablet {
+                margin: 1rem 0.5rem 1rem 0;
+            }
+        }
 
-        &-box{
+        &-box {
             width: 100%;
             display: flex;
             justify-content: flex-start;
 
             &--reverse {
-                @include tablet{
+                @include tablet {
                     flex-direction: row-reverse;
-
                 }
             }
         }
@@ -150,15 +181,27 @@
         &-icon {
             height: 2rem;
             padding: 0.2rem;
+            transition: transform 0.2s ease;
 
             @include tablet {
                 height: 2.5rem;
             }
 
-            @include desktop{
+            @include desktop {
                 margin-top: 0.5rem;
                 height: 2.5rem;
             }
+
+            &:hover {
+                transform: translateY(-2px);
+            }
         }
+    }
+
+    &__status {
+        font-size: 0.75rem;
+        color: $textLight;
+        font-style: italic;
+        margin-top: 0.25rem;
     }
 }

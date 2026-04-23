@@ -28,9 +28,7 @@
 
 @mixin desktop-padding {
     padding: 3rem 5rem;
-    
 }
-
 
 @mixin flex-column {
     display: flex;
@@ -52,13 +50,65 @@
     cursor: pointer;
     transition: 0.25s;
 
+    &:hover,
+    &:focus {
+        background-color: $accent1;
+        color: $primaryDark;
+        border-color: $primaryDark;
+    }
+}
+
+@mixin button-secondary {
+    background-color: transparent;
+    border: 2px solid $secondary;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: $secondaryDark;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.25s;
 
     &:hover,
-    &:focus { 
-        background-color: rgba(245,234,229,0.6);
+    &:focus {
+        background-color: $secondary;
+        color: $textPrimary;
+        border-color: $secondaryDark;
+    }
+}
+
+@mixin tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    background-color: $backgroundCard;
+    color: $textSecondary;
+    border: 1px solid $accent1;
+
+    &.tag--green {
+        background-color: $secondary;
         color: $secondaryDark;
         border-color: $secondaryDark;
     }
+
+    &.tag--pink {
+        background-color: $accent1;
+        color: $textPrimary;
+        border-color: $accent3;
+    }
+
+    &.tag--yellow {
+        background-color: $accent2;
+        color: $textPrimary;
+        border-color: darken($accent2, 15%);
+    }
+}
+
+@mixin card {
+    background-color: $backgroundCard;
+    border-radius: 12px;
+    border: 0.5px solid $accent1;
+    padding: 1rem 1.25rem;
 }
 
 @mixin top-margin {
@@ -69,7 +119,8 @@
     width: 1rem;
     color: $primary;
     cursor: pointer;
-    @include tablet{
+
+    @include tablet {
         width: 1.5rem;
     }
     @include desktop {
@@ -79,10 +130,8 @@
 
 @mixin border-radius {
     border-radius: 10px;
-    
 }
 
 @mixin sending-animation {
     animation: sending 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
 }
-

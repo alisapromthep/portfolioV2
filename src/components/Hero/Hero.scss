@@ -15,17 +15,21 @@
         @include desktop-padding;
         max-width: none;
         width: 100%;
-    } 
+    }
 
     @include large-desktop {
         max-width: 1600px;
     }
 
     &__container {
-        background: linear-gradient(180deg, rgba(238,228,225,1) 70%, rgba(238,228,225,0) 80%);
+        background: linear-gradient(
+            180deg,
+            $backgroundColor 70%,
+            rgba($backgroundColor, 0) 80%
+        );
 
         @include top-margin;
-        
+
         @include large-desktop {
             display: flex;
             justify-content: center;
@@ -33,21 +37,22 @@
         }
     }
 
-    &__textbox{
+    &__textbox {
         display: flex;
         flex-direction: column;
 
-        @include tablet{
+        @include tablet {
             width: 50%;
             height: 100%;
         }
     }
 
-    &__headline{
+    &__headline {
         font-size: 3.5rem;
         width: 100%;
         margin: 0;
         line-height: 3.5rem;
+        color: $textPrimary;
 
         @include tablet {
             font-size: 6rem;
@@ -61,23 +66,26 @@
             line-height: 6.5rem;
         }
 
-        &--smaller{
+        &--smaller {
             font-size: 2rem;
             margin: 0;
             display: block;
+            color: $textSecondary;
 
             @include desktop {
                 font-size: 2.5rem;
-            }   
+            }
         }
 
-        &--color{
-            color:$primary;
-            
+        &--color {
+            color: $primary;
         }
     }
+
     &__tagline {
-        @include tablet{
+        color: $textSecondary;
+
+        @include tablet {
             width: 100%;
         }
     }
@@ -85,8 +93,8 @@
     &__img {
         display: none;
 
-        @include tablet{
-            display:block;
+        @include tablet {
+            display: block;
         }
 
         @include desktop {
@@ -94,18 +102,18 @@
             height: 35rem;
         }
 
-        @include large-desktop{
+        @include large-desktop {
             height: 40rem;
         }
 
-        &-container{
+        &-container {
             display: none;
+            background-color: transparent;
 
-            @include tablet{
+            @include tablet {
                 display: block;
             }
         }
-        
     }
 
     &__button {
@@ -118,19 +126,17 @@
             font-size: 1.2rem;
         }
 
-        &:hover .button__icon{
+        &:hover .button__icon {
             @include sending-animation;
         }
     }
 
-    &__arrow-down{
-        display:flex;
-        color: $primary;
+    &__arrow-down {
+        display: flex;
+        color: $secondary;
         font-size: 1rem;
         margin-top: 2rem;
         animation: arrow-down-bounce 1s infinite linear;
         justify-self: center;
     }
-
 }
-

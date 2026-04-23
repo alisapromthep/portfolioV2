@@ -16,53 +16,120 @@
         @include tablet-padding;
     }
 
-    @include desktop{
+    @include desktop {
         @include desktop-padding;
     }
 
-    &__img{
+    &__img {
         width: 12.5rem;
         object-fit: cover;
 
-        @include tablet{
+        @include tablet {
             width: 15rem;
         }
         @include desktop {
             width: 20rem;
         }
-        
-        
+
         &-container {
             @include border-radius;
             width: 12.5rem;
             height: 100%;
             overflow: hidden;
             position: relative;
-            background-color: $primary;
-            //filter: opacity(0.85);
+            background-color: $accent1;
             z-index: 1;
-            
-            @include tablet{
+
+            @include tablet {
                 width: 15rem;
-                //height: 15rem;
             }
 
             @include desktop {
                 width: 20rem;
-                //height: 20rem;
             }
         }
-
     }
 
     &__textbox {
-        background-color: $backgroundColor;
+        background-color: $backgroundCard;
         @include border-radius;
-        padding: 0 2rem;
+        @include card;
+        padding: 1.5rem 2rem;
+        
         @include tablet {
             width: 50%;
         }
     }
 
-    
+    &__name {
+        color: $textPrimary;
+        margin-bottom: 0.25rem;
+    }
+
+    &__headline {
+        color: $primary;
+        font-size: 1rem;
+        margin: 0 0 1rem;
+    }
+
+    &__bio {
+        color: $textSecondary;
+        line-height: 1.7;
+    }
+
+    &__stats {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1.25rem;
+        flex-wrap: wrap;
+    }
+
+    &__stat {
+        background-color: $backgroundColor;
+        border-radius: 8px;
+        padding: 0.5rem 0.75rem;
+        text-align: center;
+        border: 0.5px solid $accent1;
+        min-width: 4rem;
+
+        &-value {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: $primary;
+            display: block;
+        }
+
+        &-label {
+            font-size: 0.7rem;
+            color: $textSecondary;
+            display: block;
+        }
+    }
+
+    &__skills {
+        margin-top: 1.25rem;
+    }
+
+    &__skill-group {
+        margin-bottom: 0.75rem;
+
+        &-label {
+            font-size: 0.7rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $textLight;
+            margin-bottom: 0.4rem;
+            display: block;
+        }
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+
+    &__tag {
+        @include tag;
+    }
 }
