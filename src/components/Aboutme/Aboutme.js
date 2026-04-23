@@ -1,5 +1,5 @@
 import "./Aboutme.scss";
-import { ReactComponent as Apwork } from "../../assets/images/ap-work-credit.svg";
+import headshot from "../../assets/images/ap1.JPG";
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { aboutMeData } from "../../data/aboutMeData";
@@ -20,7 +20,11 @@ const Aboutme = ({ aboutRef }) => {
         className={`aboutme reveal ${aboutMeInView ? "reveal--active" : ""}`}
       >
         <div className="aboutme__img-container">
-          <Apwork className="aboutme__img" />
+          <img
+            className="aboutme__img"
+            src={headshot}
+            alt="imagine of my headshot"
+          />
         </div>
 
         <div className="aboutme__textbox">
