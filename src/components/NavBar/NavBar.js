@@ -14,14 +14,14 @@ const NavBar = ({ handleScrollToAbout, handleScrollToProject, openModal }) => {
         <button className="nav__tab" onClick={handleScrollToProject}>
           Projects
         </button>
-        <a
+        {/* <a
           className="nav__tab"
           href="https://docs.google.com/document/d/e/2PACX-1vSE8GB9wynWs1sdh-r0mueZmOwiHMzscNesOOJChC4kMtlIJkeT_kravPNAwASnqcSS1SLA8gimdiZ0/pub"
           target="_blank"
           rel="noreferrer"
         >
           Resume
-        </a>
+        </a> */}
       </div>
     </nav>
   );
