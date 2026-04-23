@@ -84,6 +84,8 @@
 
     &__tagline {
         color: $textSecondary;
+        text-transform: capitalize;
+
 
         @include tablet {
             width: 100%;

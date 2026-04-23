@@ -2,9 +2,9 @@ export const aboutMeData = [
   {
     name: "Alisa Promthep",
     headline: "Chemist · Data Analyst · Builder",
-    location: "Vancouver, BC",
+    location: "Canada",
     status: "Open to coordinator and analyst roles · Remote or hybrid",
-    bio: "Most product decisions are made without talking to someone who's actually made the product. I have. I spent 3+ years as an R&D chemist formulating personal care products from brief to launch — then taught myself to code, won two hackathons, and started connecting the dots with data. Now I work at the intersection of product knowledge, analytical thinking, and tech.",
+    bio: "Most product decisions are made without talking to someone who's actually made the product. I have. I spent 3+ years as an R&D chemist formulating personal care products from brief to launch — then upskilled myself to code, won two hackathons, and started connecting the dots with data. Now I'm looking to put all of it to work.",
     stats: [
       { value: "3+", label: "yrs R&D" },
       { value: "12", label: "accounts managed" },

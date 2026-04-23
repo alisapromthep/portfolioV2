@@ -15,8 +15,7 @@ const Hero = ({ openModal }) => {
             <span className="hero__headline--color">Chemist who codes</span>
           </h1>
           <p className="hero__tagline">
-            Now working at the intersection of product, data, and strategy —
-            helping teams make smarter decisions faster.
+            chemistry + code = better product decisions.
           </p>
           <button className="hero__button" onClick={openModal}>
             Send me a message <FaTelegramPlane className="button__icon" />

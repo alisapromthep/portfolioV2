@@ -132,4 +132,64 @@
     &__tag {
         @include tag;
     }
+
+    &__education {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+&__edu-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    padding: 0.4rem 0;
+    border-bottom: 0.5px solid $accent1;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+&__edu-degree {
+    font-size: 0.8rem;
+    color: $textPrimary;
+    font-weight: 500;
+}
+
+&__edu-status {
+    font-size: 0.75rem;
+    color: $textLight;
+    font-style: italic;
+}
+
+&__edu-school {
+    font-size: 0.75rem;
+    color: $textSecondary;
+}
+
+&__currently {
+    margin-top: 1.25rem;
+    padding: 0.75rem 1rem;
+    background-color: $backgroundColor;
+    border-radius: 8px;
+    border-left: 3px solid $secondary;
+}
+
+&__currently-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $textLight;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+&__currently-text {
+    font-size: 0.85rem;
+    color: $textSecondary;
+    margin: 0;
+    line-height: 1.6;
+}
 }

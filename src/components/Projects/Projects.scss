@@ -204,4 +204,23 @@
         font-style: italic;
         margin-top: 0.25rem;
     }
+&__video-container {
+    @include border-radius;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    @include tablet {
+        width: 38rem;
+        height: 22rem;
+        margin: 0 1rem;
+    }
+}
+
+&__video {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 }
