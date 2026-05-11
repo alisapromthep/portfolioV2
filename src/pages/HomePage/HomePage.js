@@ -1,14 +1,54 @@
 import "./HomePage.scss";
-import Projectsection from "../../components/Projectsection/Projectsection";
+import ProjectSection from "../../components/Projectsection/Projectsection";
 import Landing from "../../components/Landing/Landing";
+import FeaturedProjects from "../../components/FeaturedProjects/FeaturedProjects";
+import { projectData } from "../../data/projectData";
+import { dataProjectData } from "../../data/dataProjectData";
+import React, { useState, useEffect, useRef } from "react";
 
-import React from "react";
+const featuredWebProjects = projectData.filter((p) => p.featured);
+const featuredDataProjects = dataProjectData.filter((p) => p.featured);
+const featuredProjects = [...featuredWebProjects, ...featuredDataProjects];
 
-function HomePage({ aboutRef, projectRef, openModal }) {
+function HomePage({ activeSection, openModal }) {
+  // Track previous section so we can animate the direction of the turn
+  const prevSection = useRef(activeSection);
+  const [animKey, setAnimKey] = useState(0);
+
+  useEffect(() => {
+    if (prevSection.current !== activeSection) {
+      prevSection.current = activeSection;
+      // Bump key to remount the section wrapper and re-trigger the animation
+      setAnimKey((k) => k + 1);
+    }
+  }, [activeSection]);
+
   return (
     <main className="homepage">
-      <Landing aboutRef={aboutRef} openModal={openModal} />
-      <Projectsection projectRef={projectRef} />
+      <div key={animKey} className="homepage__section homepage__section--turn">
+        {activeSection === "about" && (
+          <>
+            <Landing openModal={openModal} />
+            {featuredProjects.length > 0 && (
+              <FeaturedProjects projects={featuredProjects} />
+            )}
+          </>
+        )}
+
+        {activeSection === "data" && (
+          <ProjectSection
+            projectsData={dataProjectData}
+            sectionTitle="Data Projects"
+          />
+        )}
+
+        {activeSection === "web" && (
+          <ProjectSection
+            projectsData={projectData}
+            sectionTitle="Web Projects"
+          />
+        )}
+      </div>
     </main>
   );
 }

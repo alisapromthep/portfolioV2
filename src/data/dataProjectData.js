@@ -1,6 +1,7 @@
 export const dataProjectData = [
   {
     id: 1,
+    featured: true,
     name: "Bellabeat Case Study",
     img: null,
     video: null,

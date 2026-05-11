@@ -12,14 +12,3 @@ body {
     background-color: $backgroundColor;
 }
 
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
-
-    &--active{
-        transform: translate(0);
-        opacity: 1;
-    }
-}

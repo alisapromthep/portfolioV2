@@ -15,6 +15,7 @@ import perplexityIcon from "../assets/icons/perplexity.svg";
 export const projectData = [
   {
     id: 1,
+    featured: true,
     name: "Ingredients Navigator",
     img: null,
     video: "https://player.vimeo.com/video/1088298677",
