@@ -18,12 +18,13 @@
 
     &__header{
         @include flex-column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
 
         @include tablet{
             flex-direction: row;
             margin: -2rem 0;
+            width:100%;
         }
         @include desktop{
             justify-content: flex-start;
@@ -31,16 +32,9 @@
     }
 
     &__img{
-        width: 15rem;
-        height: auto;
-
-        @include tablet {
-            width: 20rem;
-        }
-
-        @include desktop {
-            width: 25rem;
-        }
+        max-height: 12rem;
+        z-index: 2;
+        width: 16rem;
     }
 
     &__headline {
