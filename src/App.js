@@ -39,7 +39,7 @@ function App() {
           }
         />
       </Routes>
-      <Footer />
+      <Footer openModal={openModal} />
     </BrowserRouter>
   );
 }
