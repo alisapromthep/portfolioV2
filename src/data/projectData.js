@@ -129,7 +129,7 @@ export const projectData = [
     id: 4,
     name: "Shutterstock",
     img: shutterstockHome,
-    badge: "Hackathon — BrainStation x Shutterstock",
+    badge: "🏆 1st Place — BrainStation x Shutterstock Hackathon",
     tagline: "Homepage redesign and new feature concept",
     description:
       "A recreation of the Shutterstock homepage with an additional features section and new feature page, built as a proof of concept in collaboration between Web Developers and UX Designers.",

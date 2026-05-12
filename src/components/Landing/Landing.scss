@@ -23,11 +23,12 @@
 
 
     &__illustration {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2rem;
+        display:none;
 
         @include tablet {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
             margin-bottom: 0;
             flex-shrink: 0;
         }

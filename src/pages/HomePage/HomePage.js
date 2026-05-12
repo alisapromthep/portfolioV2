@@ -29,9 +29,6 @@ function HomePage({ activeSection, openModal }) {
         {activeSection === "about" && (
           <>
             <Landing openModal={openModal} />
-            {/* {featuredProjects.length > 0 && (
-              <FeaturedProjects projects={featuredProjects} />
-            )} */}
           </>
         )}
 

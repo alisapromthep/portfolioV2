@@ -1,15 +1,11 @@
 import React from "react";
 import "./Projectsection.scss";
 import Project from "../Projects/Projects";
-import { ReactComponent as ApProject } from "../../assets/images/ap-project-credit.svg";
 
 const ProjectSection = ({ projectsData, sectionTitle }) => {
   return (
     <section className="projects">
-      <div className="projects__header">
-        <ApProject className="projects__img" />
-        <h2 className="projects__headline">{sectionTitle || "Projects"}</h2>
-      </div>
+      <h2 className="projects__header">{sectionTitle || "Projects"}</h2>
       <div className="projects__box">
         {projectsData.map((project, index) => (
           <Project

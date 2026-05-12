@@ -10,7 +10,7 @@
 
     &__container {
         border-radius: 10px;
-        background-color: $backgroundCard;
+        background-color: transparent;
         border: 0.5px solid $accent1;
 
         &--invert {
@@ -95,7 +95,8 @@
         padding: 2rem;
         font-size: 0.9rem;
         transition: all 0.3s ease-in-out;
-        background-color: $backgroundCard;
+        background-color: transparent;
+        //background-color: $backgroundCard;
 
         @include tablet {
             width:80%;
@@ -138,6 +139,7 @@
         margin: 0.25rem;
         font-size: 1rem;
         font-weight: 800;
+        background-color: $backgroundCard;
 
         @include tablet {
             margin: 1rem 0.5rem 1rem 0;
@@ -150,6 +152,7 @@
             margin: 0.25rem;
             font-size: 1rem;
             font-weight: 800;
+            background-color: $backgroundCard;
 
             @include tablet {
                 margin: 1rem 0.5rem 1rem 0;
