@@ -2,18 +2,18 @@
 @use '../../styles/partials/mixins' as *;
 
 .featured {
-  @include mobile-padding;
-  padding-top: 0;
+  // @include mobile-padding;
+  // padding-top: 0;
 
-  @include tablet {
-    @include tablet-padding;
-    padding-top: 0;
-  }
+  // @include tablet {
+  //   @include tablet-padding;
+  //   padding-top: 0;
+  // }
 
-  @include desktop {
-    @include desktop-padding;
-    padding-top: 0;
-  }
+  // @include desktop {
+  //   @include desktop-padding;
+  //   padding-top: 0;
+  // }
 
   &__header {
     display: flex;

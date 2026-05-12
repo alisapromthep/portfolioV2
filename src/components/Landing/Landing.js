@@ -2,6 +2,13 @@ import "./Landing.scss";
 import { ReactComponent as Apwork } from "../../assets/images/ap-work-credit.svg";
 import { FaTelegramPlane, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { aboutMeData } from "../../data/aboutMeData";
+import FeaturedProjects from "../FeaturedProjects/FeaturedProjects";
+import { projectData } from "../../data/projectData";
+import { dataProjectData } from "../../data/dataProjectData";
+
+const featuredDataProjects = dataProjectData.filter((p) => p.featured);
+const featuredWebProjects = projectData.filter((p) => p.featured);
+const featuredProjects = [...featuredDataProjects, ...featuredWebProjects];
 
 const Landing = ({ openModal }) => {
   const { bio, stats, currently } = aboutMeData[0];
@@ -32,7 +39,7 @@ const Landing = ({ openModal }) => {
           ))}
         </div>
 
-        <p className="landing__currently">{currently}</p>
+        {/* <p className="landing__currently">{currently}</p> */}
 
         <div className="landing__actions">
           <div className="landing__social">
@@ -56,6 +63,11 @@ const Landing = ({ openModal }) => {
               Send me a message <FaTelegramPlane className="button__icon" />
             </button>
           </div>
+        </div>
+        <div>
+          {featuredProjects.length > 0 && (
+            <FeaturedProjects projects={featuredProjects} />
+          )}
         </div>
       </div>
     </section>
