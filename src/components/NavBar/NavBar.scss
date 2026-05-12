@@ -12,7 +12,7 @@
     z-index: 100;
     padding: 0 2rem;
     height: 3rem;
-    background-color: transparent;
+    background-color: $backgroundColor;
 
     @include tablet {
         padding: 0 3rem;
@@ -37,36 +37,41 @@
         gap: 0;
     }
 
-    &__tab {
-        display: inline-block;
-        padding: 0.4rem 1.25rem;
-        font-size: 0.85rem;
-        font-weight: 500;
-        color: $textSecondary;
-        background-color: $backgroundCard;
-        border: 0.5px solid $accent1;
-        border-bottom: none;
-        border-radius: 10px 10px 0 0;
-        cursor: pointer;
-        text-decoration: none;
-        transition: all 0.2s ease;
-        position: relative;
-        margin-right: 4px;
+&__tab {
+    display: inline-block;
+    padding: 0.4rem 1.25rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 0.5px solid $accent1;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    margin-right: 4px;
 
-        &:hover {
-            background-color: $accent1;
-            color: $textPrimary;
-        }
+   &--about {
+    background-color: $bgAbout;
+    color: $textPrimary;
+    border-color: $bgAbout;
+}
 
-        &--active {
-            background-color: $backgroundColor;
-            color: $primary;
-            font-weight: 500;
-            border-color: $accent1;
-            z-index: 1;
-        }
-    }
+&--data {
+    background-color: $bgData;
+    color: $textPrimary;
+    border-color: $bgData;
+}
 
+&--web {
+    background-color: $bgWeb;
+    color: $textPrimary;
+    border-color: $bgWeb;
+}
+
+&--active {
+    z-index: 1;
+}
+}
     &__icons {
         display: flex;
         align-items: center;

@@ -21,6 +21,7 @@
         @include desktop-padding;
     }
 
+
     &__illustration {
         display: flex;
         justify-content: center;
@@ -75,11 +76,11 @@
         line-height: 1.1;
 
         @include tablet {
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
 
         @include desktop {
-            font-size: 5rem;
+            font-size: 4rem;
         }
     }
 
@@ -138,6 +139,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+
     }
 
     &__button {
@@ -167,6 +169,7 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    padding: 0.5rem 0;
 }
 
 &__social-link {

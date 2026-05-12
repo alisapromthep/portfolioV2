@@ -24,7 +24,7 @@ function HomePage({ activeSection, openModal }) {
   }, [activeSection]);
 
   return (
-    <main className="homepage">
+    <main className={`homepage homepage--${activeSection}`}>
       <div key={animKey} className="homepage__section homepage__section--turn">
         {activeSection === "about" && (
           <>

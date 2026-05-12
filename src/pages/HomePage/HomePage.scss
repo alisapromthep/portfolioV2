@@ -1,3 +1,4 @@
+@use '../../styles/partials/colors' as *;
 
 .modal {
   display: flex;
@@ -8,6 +9,11 @@
 
 .homepage {
   margin: 0;
+      transition: background-color 0.4s ease;
+
+    &--about { background-color: $bgAbout; }
+    &--data  { background-color: $bgData; }
+    &--web   { background-color: $bgWeb; }
 
   &__section {
     width: 100%;

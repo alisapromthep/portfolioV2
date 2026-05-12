@@ -14,7 +14,7 @@ const NavBar = ({ activeSection, setActiveSection, openModal }) => {
         {NAV_TABS.map(({ id, label }) => (
           <button
             key={id}
-            className={`nav__tab ${activeSection === id ? "nav__tab--active" : ""}`}
+            className={`nav__tab nav__tab--${id} ${activeSection === id ? "nav__tab--active" : ""}`}
             onClick={() => setActiveSection(id)}
           >
             {label}

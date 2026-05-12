@@ -1,28 +1,31 @@
-
 // retro spring × illustration palette
+
+// Desk — true background, nav surround
 $backgroundColor: #FAF0EB;      // warm cream — matches illustration bg
-$backgroundCard: #F5EBE6;       // slightly deeper cream for cards/folder body
 
-$primary: #6B8CAE;              // softened navy — matches hoodie without competing
-$primaryDark: #4A6A8A;          // darker navy for hover states
-$primaryLight: #B8CCE0;         // pale blue for subtle accents
+// Paper — tab + page content (same colour per section)
+$bgAbout: #FDF0ED;              // warm blush — lightest
+$bgData:  #F5DDD7;              // soft rose — mid
+$bgWeb:   #EBC9C1;              // dusty pink — deepest
 
-$secondary: #A4BDA8;            // meadow green — folder tabs, tags
-$secondaryDark: #7A9E80;        // deeper meadow for hover
+// Cards — cream so they feel lifted off the rose backgrounds
+$backgroundCard: #FAF0EB;       // same as desk — cards pop off the paper
 
-$accent1: #E9CEC7;              // frosted pink — soft highlights
-$accent2: #FFCA8C;              // sunset — tiny accents, badges only
-$accent3: #EBA5A5;              // rose garden — use sparingly, alerts/active states
+// Blues — UI elements and text accents only
+$primary: #6B8CAE;              // softened navy
+$primaryDark: #4A6A8A;          // darker navy
+$primaryLight: #B8CCE0;         // pale blue
 
-$textPrimary: #2C2A28;          // warm near-black — not harsh pure black
-$textSecondary: #7A7570;        // warm mid-gray for secondary text
+// Green — small tags only
+$secondary: #A4BDA8;            // meadow green
+$secondaryDark: #7A9E80;        // deeper meadow
+
+// Accents — all warm
+$accent1: #E9CEC7;              // frosted pink — borders, subtle fills
+$accent2: #E8A598;              // deeper rose — badges
+$accent3: #C9B8D4;              // soft lavender — warm third accent
+
+// Text — warm, unchanged
+$textPrimary: #2C2A28;          // warm near-black
+$textSecondary: #7A7570;        // warm mid-gray
 $textLight: #B0A8A3;            // hints, captions
-
-//previous colors
-// $backgroundColor:#eee4e1;
-//$primaryLight:#EDEDE9;
-// $primary:  #344E8C;
-// $primaryDark:#4168B0;
-// $secondary:#344E8C; 
-// $secondaryDark: #203458;
-

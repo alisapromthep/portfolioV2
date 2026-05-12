@@ -42,26 +42,28 @@ const Landing = ({ openModal }) => {
         {/* <p className="landing__currently">{currently}</p> */}
 
         <div className="landing__actions">
-          <div className="landing__social">
-            <a
-              href="https://www.linkedin.com/in/alisa-promthep/"
-              target="_blank"
-              rel="noreferrer"
-              className="landing__social-link"
-            >
-              <FaLinkedin className="landing__social-icon" />
-            </a>
-            <a
-              href="https://github.com/alisapromthep"
-              target="_blank"
-              rel="noreferrer"
-              className="landing__social-link"
-            >
-              <FaGithubSquare className="landing__social-icon" />
-            </a>
+          <div>
             <button className="landing__button" onClick={openModal}>
               Send me a message <FaTelegramPlane className="button__icon" />
             </button>
+            <div className="landing__social">
+              <a
+                href="https://www.linkedin.com/in/alisa-promthep/"
+                target="_blank"
+                rel="noreferrer"
+                className="landing__social-link"
+              >
+                <FaLinkedin className="landing__social-icon" />
+              </a>
+              <a
+                href="https://github.com/alisapromthep"
+                target="_blank"
+                rel="noreferrer"
+                className="landing__social-link"
+              >
+                <FaGithubSquare className="landing__social-icon" />
+              </a>
+            </div>
           </div>
         </div>
         <div>
