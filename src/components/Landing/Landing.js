@@ -21,11 +21,8 @@ const Landing = ({ openModal }) => {
 
       <div className="landing__content">
         <div className="landing__intro">
-          <p className="landing__greeting">Hi, I'm</p>
           <h1 className="landing__name">Alisa Promthep</h1>
-          <p className="landing__tagline">
-            Chemistry + code = better product decisions
-          </p>
+          <p className="landing__tagline">Bridging Lab and Business</p>
         </div>
 
         <p className="landing__bio">{bio}</p>

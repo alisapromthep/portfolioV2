@@ -9,9 +9,9 @@ const Footer = ({ openModal }) => {
     <footer className="footer">
       <div className="footer__inner">
         <p className="footer__name">Alisa Promthep</p>
-        <p className="footer__tagline">
+        {/* <p className="footer__tagline">
           Chemistry + code = better product decisions
-        </p>
+        </p> */}
 
         <div className="footer__links">
           <a

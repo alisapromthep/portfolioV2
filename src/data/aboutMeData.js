@@ -1,14 +1,16 @@
 export const aboutMeData = [
   {
     name: "Alisa Promthep",
-    headline: "Chemist · Data Analyst · Builder",
+    headline: "Chemist · Coordinator · Bridge-Builder",
     location: "Canada",
-    status: "Open to coordinator and analyst roles · Remote or hybrid",
-    bio: "Most product decisions are made without talking to someone who's actually made the product. I have. I spent 3+ years as an R&D chemist formulating personal care products from brief to launch — then upskilled myself to code, won two hackathons, and started connecting the dots with data. Now I'm looking to put all of it to work.",
+    status:
+      "Open to coordinator, implementation, and client services roles at companies building tools for scientists · Remote or hybrid",
+    bio: "I've stood at the bench. 3+ years as an R&D chemist managing a dozen client accounts, working daily inside a materials management system, and translating lab realities for people who've never set foot in a lab. Now bringing that same bridge-building instinct — plus a growing technical toolkit — to coordinator and client services roles.",
     stats: [
       { value: "3", label: "yrs R&D" },
       { value: "20+", label: "product types" },
-      { value: "2x", label: "hackathon winner" },
+      { value: "12", label: "client accounts" },
+      { value: "1,000+", label: "people supported" },
       { value: "3", label: "continents lived" },
     ],
     skills: {
@@ -43,7 +45,7 @@ export const aboutMeData = [
       {
         degree: "Google Data Analytics Certificate",
         school: "Google",
-        status: "in progress",
+        status: "Complete",
       },
     ],
     links: [
@@ -52,7 +54,6 @@ export const aboutMeData = [
       { name: "Devpost", url: "https://devpost.com/alisapromthep" },
       { name: "Art", url: "https://www.instagram.com/apumpkin.doodle" },
     ],
-    currently:
-      "Building toward data analytics — levelling up in SQL & Python daily. Google Data Analytics capstone in progress.",
+    currently: "Levelling up in SQL & Python daily.",
   },
 ];
