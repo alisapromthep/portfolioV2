@@ -1,5 +1,6 @@
 import allergyTrackingHome from "../assets/projects/reaction-home.png";
 import shutterstockHome from "../assets/projects/shutterstock-homepage.png";
+import catPropCafeGameplay from "../assets/projects/cat-prop-cafe-gameplay.png";
 import cssIcon from "../assets/icons/css-3.svg";
 import expressIcon from "../assets/icons/express.svg";
 import jsIcon from "../assets/icons/javascript.svg";
@@ -87,6 +88,31 @@ export const projectData = [
   },
   {
     id: 3,
+    featured: true,
+    name: "Cat Prop Cafe",
+    img: catPropCafeGameplay,
+    badge: "Teaching Through Analogy",
+    tagline: "Explaining React props using analogies of cats and cafe rooms",
+    description:
+      "A gamified teaching tool that turns an abstract coding concept into a familiar story: React components become rooms in a cafe, and props become cats that can only move between rooms by following set rules. Built after my time as a TA, it reflects how I approach explaining technical ideas — start with something people already understand, then map the concept onto it.",
+    techIcon: [jsIcon, reactIcon],
+    techstack: ["JavaScript", "React", "React Flow", "reactjs-popup"],
+    highlights: [
+      "Translates a technical concept into a relatable analogy for beginners",
+      "Four guided tasks that build understanding step by step, from simple to complex",
+      "Interactive flow chart that turns the code structure into a visual map",
+      "Self-initiated after my TA role, shaped by what I learned teaching React to new developers",
+    ],
+    links: [
+      { name: "Live demo", url: "https://cat-prop-cafe.netlify.app/" },
+      {
+        name: "GitHub",
+        url: "https://github.com/alisapromthep/cat-prop-cafe",
+      },
+    ],
+  },
+  {
+    id: 4,
     name: "Reaction",
     img: allergyTrackingHome,
     badge: "Capstone Project",
@@ -126,7 +152,7 @@ export const projectData = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: "Shutterstock",
     img: shutterstockHome,
     badge: "🏆 1st Place — BrainStation x Shutterstock Hackathon",

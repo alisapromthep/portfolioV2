@@ -5,13 +5,13 @@ export const aboutMeData = [
     location: "Canada",
     status:
       "Open to coordinator, implementation, and client services roles at companies building tools for scientists · Remote or hybrid",
-    bio: "I've stood at the bench. 3+ years as an R&D chemist managing a dozen client accounts, working daily inside a materials management system, and translating lab realities for people who've never set foot in a lab. Now bringing that same bridge-building instinct — plus a growing technical toolkit — to coordinator and client services roles.",
+    bio: "I've stood at the bench. 3 years as an R&D chemist managing a dozen client accounts, working daily inside a materials management system, and translating lab realities for people who've never set foot in a lab. Now I bring that same bridge-building instinct, plus a growing technical toolkit, to client services, onboarding, and customer education roles. If your team needs someone who speaks both science and customer, let's talk.",
     stats: [
-      { value: "3", label: "yrs R&D" },
-      { value: "20+", label: "product types" },
+      { value: "30+", label: "Students taught" },
       { value: "12", label: "client accounts" },
       { value: "1,000+", label: "people supported" },
-      { value: "3", label: "continents lived" },
+      { value: "3", label: "yrs R&D" },
+      { value: "20+", label: "product types" },
     ],
     skills: {
       domain: [

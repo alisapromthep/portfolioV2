@@ -5,7 +5,7 @@ export const dataProjectData = [
     name: "Bellabeat Case Study",
     img: null,
     video: null,
-    badge: "Google Data Analytics Capstone",
+    badge: "Data Analytics Capstone",
     tagline:
       "Smart device usage trends and marketing recommendations for Bellabeat",
     description:
